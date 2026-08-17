@@ -6,7 +6,9 @@ function Home() {
   return (
     <main className="bg-[#11100d] text-[#f5f1e8]">
 
-      {/* HERO */}
+      {/* =========================================================
+          HERO
+      ========================================================= */}
 
       <section className="relative flex min-h-screen items-end overflow-hidden">
 
@@ -58,10 +60,18 @@ function Home() {
 
               <Link
                 to="/rooms"
-                className="inline-flex w-fit items-center gap-4 bg-[#11100d] px-7 py-4 text-[10px] uppercase tracking-[0.2em] text-white transition hover:bg-black"
+                className="inline-flex w-fit items-center gap-4 bg-black px-7 py-4 text-[10px] uppercase tracking-[0.2em] !text-white transition hover:bg-[#050505]"
               >
-                Explore the Lodge
-                <ArrowDown size={14} />
+
+                <span className="!text-white">
+                  Explore the Lodge
+                </span>
+
+                <ArrowDown
+                  size={14}
+                  className="text-white"
+                />
+
               </Link>
 
 
@@ -83,7 +93,7 @@ function Home() {
             Rooms from
           </p>
 
-          <p className="mt-1 font-serif text-xl">
+          <p className="mt-1 font-serif text-xl text-white">
             $30
             <span className="text-sm text-white/50">
               {' '}
@@ -96,7 +106,9 @@ function Home() {
       </section>
 
 
-      {/* INTRO */}
+      {/* =========================================================
+          INTRO
+      ========================================================= */}
 
       <section className="px-6 py-28 md:px-10 md:py-40 lg:px-14">
 
@@ -136,6 +148,7 @@ function Home() {
               }}
               className="font-serif text-5xl leading-[0.95] tracking-[-0.03em] md:text-7xl lg:text-[7rem]"
             >
+
               Your gateway
 
               <br />
@@ -143,6 +156,7 @@ function Home() {
               <span className="italic text-white/40">
                 to Tanzania.
               </span>
+
             </motion.h2>
 
 
@@ -157,10 +171,18 @@ function Home() {
 
               <Link
                 to="/lodge"
-                className="mt-8 inline-flex items-center gap-3 border-b border-white/30 pb-2 text-[10px] uppercase tracking-[0.25em] transition hover:border-white"
+                className="mt-8 inline-flex items-center gap-3 border-b border-white/30 pb-2 text-[10px] uppercase tracking-[0.25em] !text-white transition hover:border-white"
               >
-                Discover the lodge
-                <ArrowUpRight size={14} />
+
+                <span className="!text-white">
+                  Discover the lodge
+                </span>
+
+                <ArrowUpRight
+                  size={14}
+                  className="text-white"
+                />
+
               </Link>
 
             </div>
@@ -172,7 +194,9 @@ function Home() {
       </section>
 
 
-      {/* FEATURED ROOMS */}
+      {/* =========================================================
+          FEATURED ROOMS
+      ========================================================= */}
 
       <section className="bg-[#151410] px-6 py-28 md:px-10 md:py-40 lg:px-14">
 
@@ -195,10 +219,18 @@ function Home() {
 
             <Link
               to="/rooms"
-              className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-white/60 transition hover:text-white"
+              className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] !text-white/60 transition hover:!text-white"
             >
-              View all rooms
-              <ArrowUpRight size={14} />
+
+              <span>
+                View all rooms
+              </span>
+
+              <ArrowUpRight
+                size={14}
+                className="text-white"
+              />
+
             </Link>
 
           </div>
@@ -227,7 +259,7 @@ function Home() {
                   From $45 / night
                 </p>
 
-                <h3 className="mt-2 font-serif text-3xl">
+                <h3 className="mt-2 font-serif text-3xl text-white">
                   Deluxe Double
                 </h3>
 
@@ -257,7 +289,7 @@ function Home() {
                   From $50 / night
                 </p>
 
-                <h3 className="mt-2 font-serif text-3xl">
+                <h3 className="mt-2 font-serif text-3xl text-white">
                   Deluxe Twin
                 </h3>
 
@@ -287,7 +319,7 @@ function Home() {
                   From $30 / night
                 </p>
 
-                <h3 className="mt-2 font-serif text-3xl">
+                <h3 className="mt-2 font-serif text-3xl text-white">
                   Deluxe Single
                 </h3>
 
@@ -302,7 +334,9 @@ function Home() {
       </section>
 
 
-      {/* BOOKING CTA */}
+      {/* =========================================================
+          BOOKING CTA
+      ========================================================= */}
 
       <section className="px-6 py-32 md:px-10 md:py-44 lg:px-14">
 
@@ -315,20 +349,34 @@ function Home() {
             </p>
 
             <h2 className="max-w-5xl font-serif text-5xl leading-tight md:text-7xl lg:text-8xl">
+
               Your Tanzanian
+
               <br />
+
               <span className="italic text-white/40">
                 journey starts here.
               </span>
+
             </h2>
 
 
+            {/* BOOK YOUR STAY */}
+
             <Link
               to="/contact"
-              className="mt-12 inline-flex items-center gap-4 bg-white px-8 py-5 text-[10px] uppercase tracking-[0.25em] text-[#11100d] transition hover:bg-[#e8e3d8]"
+              className="group mt-12 inline-flex items-center gap-5 bg-black px-8 py-5 text-[10px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#050505]"
             >
-              Book your stay
-              <ArrowUpRight size={15} />
+
+              <span className="!text-white">
+                Book Your Stay
+              </span>
+
+              <ArrowUpRight
+                size={15}
+                className="text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
+
             </Link>
 
           </div>
