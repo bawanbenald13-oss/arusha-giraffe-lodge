@@ -4,28 +4,34 @@ import { Link } from 'react-router-dom'
 
 const rooms = [
   {
-    name: 'Deluxe Double',
+    number: '01',
+    name: 'Double Deluxe Room',
     description:
-      'A peaceful retreat designed for slow mornings, restful evenings and everything in between.',
-    image:
-      'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2000&q=90',
-    details: 'Double Bed · Garden Views',
+      'A peaceful retreat designed for slow mornings, restful evenings and everything in between. Thoughtfully appointed for couples seeking comfort and privacy in Arusha.',
+    details: 'Double Bed · Private Bathroom',
+    hero: '/images/rooms/double-deluxe/hero.jpg',
+    detail: '/images/rooms/double-deluxe/detail.jpg',
+    bathroom: '/images/rooms/double-deluxe/bathroom.jpg',
   },
   {
-    name: 'Deluxe Twin',
+    number: '02',
+    name: 'Double Deluxe Room · Extra Bed',
     description:
-      'A refined and comfortable space for travellers looking to experience Arusha together.',
-    image:
-      'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=2000&q=90',
-    details: 'Twin Beds · Garden Views',
+      'A spacious and comfortable retreat with the flexibility of an additional bed, making it ideal for couples, families or travellers staying together.',
+    details: 'Double Bed · Extra Bed · Private Bathroom',
+    hero: '/images/rooms/double-deluxe-extra/hero.jpg',
+    detail: '/images/rooms/double-deluxe-extra/detail.jpg',
+    bathroom: '/images/rooms/double-deluxe-extra/bathroom.jpg',
   },
   {
-    name: 'Deluxe Single',
+    number: '03',
+    name: 'Twin Deluxe Room',
     description:
-      'An intimate room offering everything you need for a comfortable stay in northern Tanzania.',
-    image:
-      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=2000&q=90',
-    details: 'Single Bed · Garden Views',
+      'A refined room designed for travellers sharing the journey, with twin beds and a calm atmosphere made for returning to after a day in northern Tanzania.',
+    details: 'Twin Beds · Private Bathroom',
+    hero: '/images/rooms/twin-deluxe/hero.jpg',
+    detail: '/images/rooms/twin-deluxe/detail.jpg',
+    bathroom: '/images/rooms/twin-deluxe/bathroom.jpg',
   },
 ]
 
@@ -40,21 +46,16 @@ function Rooms() {
       <section className="relative min-h-[88vh] overflow-hidden">
 
         <img
-          src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2400&q=90"
-          alt="Luxury lodge room"
+          src={rooms[0].hero}
+          alt="Double Deluxe Room at Arusha Giraffe Lodge"
           className="absolute inset-0 h-full w-full object-cover"
         />
-
-        {/* DARK OVERLAYS */}
 
         <div className="absolute inset-0 bg-black/45" />
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-transparent" />
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-transparent" />
-
-
-        {/* HERO CONTENT */}
 
         <div className="relative z-10 mx-auto flex min-h-[88vh] w-full max-w-[1500px] items-end px-6 pb-20 pt-48 md:px-10 md:pb-24 md:pt-52 lg:px-14 lg:pb-28">
 
@@ -88,7 +89,6 @@ function Rooms() {
 
             </div>
 
-
             <h1 className="max-w-5xl font-serif text-5xl leading-[0.88] tracking-[-0.04em] sm:text-6xl md:text-8xl lg:text-[7.8rem] xl:text-[8.5rem]">
 
               Stay
@@ -100,7 +100,6 @@ function Rooms() {
               </span>
 
             </h1>
-
 
             <div className="mt-10 flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
 
@@ -206,7 +205,7 @@ function Rooms() {
           </div>
 
 
-          <div className="space-y-8">
+          <div className="space-y-32">
 
             {rooms.map((room, index) => (
 
@@ -222,30 +221,57 @@ function Rooms() {
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.15,
+                  amount: 0.1,
                 }}
                 transition={{
                   duration: 0.8,
                 }}
-                className="group grid overflow-hidden bg-[#171612] lg:grid-cols-[1.15fr_0.85fr]"
+                className="group"
               >
 
-                {/* IMAGE */}
+                {/* =================================================
+                    ROOM HEADER
+                ================================================= */}
 
-                <div className="relative min-h-[430px] overflow-hidden md:min-h-[600px]">
+                <div className="mb-8 flex items-end justify-between border-b border-white/10 pb-6">
+
+                  <div>
+
+                    <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
+                      Accommodation
+                    </p>
+
+                    <h3 className="mt-4 max-w-3xl font-serif text-4xl leading-[0.95] tracking-[-0.02em] md:text-6xl lg:text-7xl">
+                      {room.name}
+                    </h3>
+
+                  </div>
+
+                  <span className="hidden text-[9px] uppercase tracking-[0.35em] text-white/30 md:block">
+                    {room.number}
+                  </span>
+
+                </div>
+
+
+                {/* =================================================
+                    HERO ROOM IMAGE
+                ================================================= */}
+
+                <div className="relative overflow-hidden">
 
                   <img
-                    src={room.image}
+                    src={room.hero}
                     alt={room.name}
-                    className="absolute inset-0 h-full w-full object-cover transition duration-[1400ms] ease-out group-hover:scale-105"
+                    className="h-[55vh] min-h-[420px] w-full object-cover transition duration-[1600ms] ease-out group-hover:scale-[1.025] md:h-[72vh]"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
 
-                  <div className="absolute left-7 top-7 md:left-10 md:top-10">
+                  <div className="absolute bottom-7 left-7 md:bottom-10 md:left-10">
 
                     <span className="text-[9px] uppercase tracking-[0.35em] text-white/60">
-                      0{index + 1}
+                      0{index + 1} / 03
                     </span>
 
                   </div>
@@ -253,40 +279,35 @@ function Rooms() {
                 </div>
 
 
-                {/* CONTENT */}
+                {/* =================================================
+                    ROOM INFORMATION
+                ================================================= */}
 
-                <div className="flex flex-col justify-between p-8 md:p-12 lg:p-14">
+                <div className="grid gap-12 py-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
 
                   <div>
 
-                    <p className="text-[8px] uppercase tracking-[0.4em] text-white/30">
-                      Accommodation
+                    <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
+                      The room
                     </p>
 
-                    <h3 className="mt-6 font-serif text-4xl leading-tight md:text-5xl">
-                      {room.name}
-                    </h3>
+                    <div className="mt-6 h-px w-14 bg-white/20" />
 
-                    <div className="mt-7 h-px w-14 bg-white/20" />
-
-                    <p className="mt-7 max-w-md text-sm leading-8 text-white/45">
-                      {room.description}
-                    </p>
-
-                    <p className="mt-7 text-[9px] uppercase tracking-[0.25em] text-white/30">
+                    <p className="mt-7 text-[9px] uppercase tracking-[0.25em] text-white/35">
                       {room.details}
                     </p>
 
                   </div>
 
+                  <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
 
-                  {/* BOOK BUTTON */}
-
-                  <div className="mt-14">
+                    <p className="max-w-xl text-sm leading-8 text-white/45 md:text-base">
+                      {room.description}
+                    </p>
 
                     <Link
                       to="/contact"
-                      className="group/button inline-flex items-center gap-5 bg-black px-7 py-5 text-[9px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#050505]"
+                      className="group/button inline-flex shrink-0 items-center gap-5 bg-black px-7 py-5 text-[9px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#050505]"
                     >
 
                       <span className="!text-white">
@@ -301,6 +322,96 @@ function Rooms() {
                     </Link>
 
                   </div>
+
+                </div>
+
+
+                {/* =================================================
+                    VISUAL STORY
+                ================================================= */}
+
+                <div className="grid gap-6 md:grid-cols-[0.72fr_1.28fr]">
+
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 30,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    viewport={{
+                      once: true,
+                      amount: 0.2,
+                    }}
+                    transition={{
+                      duration: 0.8,
+                    }}
+                    className="relative overflow-hidden md:mt-24"
+                  >
+
+                    <img
+                      src={room.detail}
+                      alt={`${room.name} interior`}
+                      className="h-[420px] w-full object-cover transition duration-[1400ms] ease-out hover:scale-105 md:h-[560px]"
+                    />
+
+                  </motion.div>
+
+
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 30,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    viewport={{
+                      once: true,
+                      amount: 0.2,
+                    }}
+                    transition={{
+                      duration: 0.9,
+                      delay: 0.1,
+                    }}
+                    className="relative overflow-hidden"
+                  >
+
+                    <img
+                      src={room.bathroom}
+                      alt={`${room.name} bathroom`}
+                      className="h-[500px] w-full object-cover transition duration-[1400ms] ease-out hover:scale-105 md:h-[680px]"
+                    />
+
+                    <div className="absolute bottom-7 left-7">
+
+                      <span className="text-[9px] uppercase tracking-[0.35em] text-white/60">
+                        Private details
+                      </span>
+
+                    </div>
+
+                  </motion.div>
+
+                </div>
+
+
+                {/* =================================================
+                    ROOM CLOSING
+                ================================================= */}
+
+                <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
+
+                  <p className="text-[9px] uppercase tracking-[0.35em] text-white/30">
+                    {room.name}
+                  </p>
+
+                  <p className="text-[9px] uppercase tracking-[0.3em] text-white/25">
+                    0{index + 1}
+                  </p>
 
                 </div>
 
@@ -322,8 +433,8 @@ function Rooms() {
       <section className="relative min-h-[70vh] overflow-hidden">
 
         <img
-          src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2400&q=90"
-          alt="Tanzania safari landscape"
+          src="/images/rooms/double-deluxe/detail.jpg"
+          alt="Inside Arusha Giraffe Lodge"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
