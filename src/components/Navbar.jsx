@@ -27,13 +27,8 @@ function Navbar() {
     window.scrollTo(0, 0)
   }, [location.pathname])
 
-  // Prevent the page underneath the menu from scrolling
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = 'hidden'
-    } else {
-      document.body.style.overflow = ''
-    }
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
 
     return () => {
       document.body.style.overflow = ''
@@ -66,7 +61,7 @@ function Navbar() {
   return (
     <>
       {/* =========================================================
-          DESKTOP / MOBILE HEADER
+          HEADER
       ========================================================= */}
 
       <header
@@ -76,6 +71,7 @@ function Navbar() {
             : 'bg-transparent'
         }`}
       >
+
         <div className="mx-auto flex h-[104px] max-w-[1500px] items-center justify-between px-6 md:px-10 lg:px-14">
 
           {/* =====================================================
@@ -110,7 +106,7 @@ function Navbar() {
 
 
           {/* =====================================================
-              DESKTOP NAV
+              DESKTOP NAVIGATION
           ===================================================== */}
 
           <nav className="hidden items-center gap-8 lg:flex">
@@ -133,7 +129,7 @@ function Navbar() {
 
             <Link
               to="/contact"
-              className="ml-3 border border-white/40 px-6 py-3 text-[10px] uppercase tracking-[0.2em] transition hover:bg-white hover:text-[#11100d]"
+              className="ml-3 border border-white/40 px-6 py-3 text-[10px] uppercase tracking-[0.2em] transition duration-300 hover:bg-white hover:text-[#11100d]"
             >
               Book Your Stay
             </Link>
@@ -156,18 +152,19 @@ function Navbar() {
             {menuOpen ? (
               <X
                 size={25}
-                strokeWidth={1.25}
+                strokeWidth={1.2}
               />
             ) : (
               <Menu
                 size={25}
-                strokeWidth={1.25}
+                strokeWidth={1.2}
               />
             )}
 
           </button>
 
         </div>
+
       </header>
 
 
@@ -183,7 +180,7 @@ function Navbar() {
         }`}
       >
 
-        {/* subtle background glow */}
+        {/* subtle atmosphere */}
 
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
@@ -200,7 +197,9 @@ function Navbar() {
 
         <div className="relative flex h-full flex-col px-6 pt-[125px] pb-10 md:px-10">
 
-          {/* small label */}
+          {/* =====================================================
+              MENU LABEL
+          ===================================================== */}
 
           <div
             className={`mb-12 flex items-center gap-4 transition-all duration-700 ${
@@ -224,7 +223,7 @@ function Navbar() {
 
 
           {/* =====================================================
-              NAVIGATION
+              MOBILE NAVIGATION
           ===================================================== */}
 
           <nav className="flex flex-col">
@@ -235,7 +234,7 @@ function Navbar() {
                 key={item.path}
                 to={item.path}
                 onClick={() => setMenuOpen(false)}
-                className={`group flex items-center justify-between border-b border-white/10 py-5 transition-all duration-700 ${
+                className={`group flex items-center gap-5 border-b border-white/10 py-5 transition-all duration-700 ${
                   menuOpen
                     ? 'translate-y-0 opacity-100'
                     : 'translate-y-6 opacity-0'
@@ -247,20 +246,12 @@ function Navbar() {
                 }}
               >
 
-                <div className="flex items-center gap-5">
+                <span className="w-6 text-[8px] tracking-[0.25em] text-white/25">
+                  0{index + 1}
+                </span>
 
-                  <span className="text-[8px] tracking-[0.25em] text-white/25">
-                    0{index + 1}
-                  </span>
-
-                  <span className="font-serif text-3xl leading-none text-white transition-transform duration-300 group-hover:translate-x-2 sm:text-4xl">
-                    {item.name}
-                  </span>
-
-                </div>
-
-                <span className="text-xs text-white/20 transition group-hover:text-white/60">
-                  ↗
+                <span className="font-serif text-3xl leading-none text-white transition-transform duration-500 group-hover:translate-x-1 sm:text-4xl">
+                  {item.name}
                 </span>
 
               </Link>
@@ -288,15 +279,11 @@ function Navbar() {
             <Link
               to="/contact"
               onClick={() => setMenuOpen(false)}
-              className="flex w-full items-center justify-between border border-white/20 px-6 py-5 transition duration-300 hover:border-white/50 hover:bg-white hover:text-[#11100d]"
+              className="flex w-full items-center justify-center border border-white/20 px-6 py-5 text-center transition duration-500 hover:border-white/50 hover:bg-white hover:text-[#11100d]"
             >
 
               <span className="text-[9px] uppercase tracking-[0.3em]">
                 Book Your Stay
-              </span>
-
-              <span className="text-lg">
-                ↗
               </span>
 
             </Link>
@@ -309,7 +296,7 @@ function Navbar() {
               </p>
 
               <p className="text-[8px] uppercase tracking-[0.3em] text-white/25">
-                Est. Lodge
+                Arusha Giraffe Lodge
               </p>
 
             </div>
