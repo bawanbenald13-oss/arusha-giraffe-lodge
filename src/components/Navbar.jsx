@@ -43,8 +43,8 @@ function Navbar() {
       path: '/experiences',
     },
     {
-      name: 'Gallery',
-      path: '/gallery',
+      name: 'Your Stay',
+      path: '/stay',
     },
   ]
 
@@ -56,22 +56,35 @@ function Navbar() {
           : 'bg-transparent'
       }`}
     >
-
       <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-6 md:px-10 lg:px-14">
 
-        {/* LOGO */}
+        {/* BRAND */}
 
         <Link
           to="/"
-          className="relative z-50"
+          className="relative z-50 flex items-center gap-4"
         >
 
-          <div className="font-serif text-xl tracking-[0.18em]">
-            ARUSHA
-          </div>
+          {/* COMPANY LOGO */}
 
-          <div className="mt-0.5 text-[8px] tracking-[0.42em] text-white/60">
-            GIRAFFE LODGE
+          <img
+            src="/images/logo.png"
+            alt="Arusha Giraffe Lodge"
+            className="h-[72px] w-[72px] object-contain"
+          />
+
+          {/* WORDMARK */}
+
+          <div>
+
+            <div className="font-serif text-xl tracking-[0.18em]">
+              ARUSHA
+            </div>
+
+            <div className="mt-0.5 text-[8px] tracking-[0.42em] text-white/60">
+              GIRAFFE LODGE
+            </div>
+
           </div>
 
         </Link>
@@ -129,6 +142,33 @@ function Navbar() {
       {menuOpen && (
 
         <div className="absolute left-0 top-0 flex h-screen w-full flex-col items-center justify-center bg-[#11100d]">
+
+          {/* MOBILE BRAND */}
+
+          <div className="absolute left-6 top-6 flex items-center gap-4 md:left-10">
+
+            <img
+              src="/images/logo.png"
+              alt="Arusha Giraffe Lodge"
+              className="h-14 w-14 object-contain"
+            />
+
+            <div>
+
+              <div className="font-serif text-xl tracking-[0.18em]">
+                ARUSHA
+              </div>
+
+              <div className="mt-0.5 text-[8px] tracking-[0.42em] text-white/60">
+                GIRAFFE LODGE
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* MOBILE NAV */}
 
           <nav className="flex flex-col items-center gap-8">
 

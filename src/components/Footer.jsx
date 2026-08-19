@@ -69,10 +69,10 @@ function Footer() {
               </Link>
 
               <Link
-                to="/gallery"
+                to="/stay"
                 className="text-sm text-white/60 transition hover:text-white"
               >
-                Gallery
+                Your Stay
               </Link>
 
             </div>
@@ -97,17 +97,17 @@ function Footer() {
               </p>
 
               <a
-                href="tel:+255000000000"
+                href="tel:+255746380392"
                 className="block transition hover:text-white"
               >
-                +255 XXX XXX XXX
+                +255 746 380 392
               </a>
 
               <a
-                href="mailto:info@arushagiraffelodge.com"
+                href="mailto:info@arusha-giraffelodge.com"
                 className="block transition hover:text-white"
               >
-                info@arushagiraffelodge.com
+                info@arusha-giraffelodge.com
               </a>
 
             </div>
@@ -130,7 +130,9 @@ function Footer() {
             className="flex items-center gap-2 transition hover:text-white"
           >
             Make an enquiry
+
             <ArrowUpRight size={12} />
+
           </Link>
 
         </div>

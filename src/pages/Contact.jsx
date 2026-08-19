@@ -148,6 +148,8 @@ function Contact() {
 
             <div className="mt-12 space-y-7 border-t border-white/10 pt-10">
 
+              {/* PHONE */}
+
               <div className="flex gap-5">
 
                 <Phone
@@ -158,17 +160,22 @@ function Contact() {
                 <div>
 
                   <p className="text-[8px] uppercase tracking-[0.3em] text-white/30">
-                    Phone
+                    Phone / WhatsApp
                   </p>
 
-                  <p className="mt-2 text-sm text-white/65">
-                    +255 XXX XXX XXX
-                  </p>
+                  <a
+                    href="tel:+255746380392"
+                    className="mt-2 block text-sm text-white/65 transition hover:text-white"
+                  >
+                    +255 746 380 392
+                  </a>
 
                 </div>
 
               </div>
 
+
+              {/* EMAIL */}
 
               <div className="flex gap-5">
 
@@ -183,14 +190,19 @@ function Contact() {
                     Email
                   </p>
 
-                  <p className="mt-2 text-sm text-white/65">
+                  <a
+                    href="mailto:info@arusha-giraffelodge.com"
+                    className="mt-2 block text-sm text-white/65 transition hover:text-white"
+                  >
                     info@arusha-giraffelodge.com
-                  </p>
+                  </a>
 
                 </div>
 
               </div>
 
+
+              {/* LOCATION */}
 
               <div className="flex gap-5">
 
@@ -297,7 +309,7 @@ function Contact() {
                 <input
                   id="phone"
                   type="tel"
-                  placeholder="+255..."
+                  placeholder="+255 746 380 392"
                   className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none placeholder:text-white/20 transition focus:border-white/50"
                 />
 
@@ -422,15 +434,15 @@ function Contact() {
                   </option>
 
                   <option className="bg-[#171612]">
-                    Deluxe Double
+                    Double Deluxe Room
                   </option>
 
                   <option className="bg-[#171612]">
-                    Deluxe Twin
+                    Double Deluxe Room with Extra Bed
                   </option>
 
                   <option className="bg-[#171612]">
-                    Deluxe Single
+                    Twin Deluxe Room
                   </option>
 
                   <option className="bg-[#171612]">
@@ -455,7 +467,7 @@ function Contact() {
 
                 <textarea
                   id="message"
-                  rows="4"
+                  rows={4}
                   placeholder="Tell us about your trip..."
                   className="w-full resize-none border-b border-white/15 bg-transparent px-0 py-4 text-sm leading-7 text-white outline-none placeholder:text-white/20 transition focus:border-white/50"
                 />

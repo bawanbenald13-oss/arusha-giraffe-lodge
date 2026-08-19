@@ -2,45 +2,126 @@ import { motion } from 'framer-motion'
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const experiences = [
+const rooms = [
   {
     number: '01',
-    title: 'Safari',
-    subtitle: 'Into the wild',
+    title: 'Double Deluxe Room',
+    subtitle: 'Comfort for two',
     description:
-      'Northern Tanzania is home to some of Africa’s most extraordinary wildlife and landscapes. Let your stay in Arusha be the beginning of the journey.',
-    image:
-      'https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2000&q=90',
+      'A warm and comfortable space designed for restful nights and easy mornings in Arusha.',
+    folder: '/images/rooms/double-deluxe',
+    images: [
+      {
+        file: 'hero.jpg',
+        label: 'The room',
+      },
+      {
+        file: 'room-02.jpg',
+        label: 'A closer look',
+      },
+      {
+        file: 'room-03.jpg',
+        label: 'The space',
+      },
+      {
+        file: 'bathroom.jpg',
+        label: 'Bathroom',
+      },
+      {
+        file: 'detail.jpg',
+        label: 'The details',
+      },
+      {
+        file: 'view.jpg',
+        label: 'The view',
+      },
+      {
+        file: 'signature.jpg',
+        label: 'A signature detail',
+      },
+    ],
   },
+
   {
     number: '02',
-    title: 'Mount Meru',
-    subtitle: 'Higher perspectives',
+    title: 'Double Deluxe Room with Extra Bed',
+    subtitle: 'More room to settle in',
     description:
-      'Discover the dramatic landscapes surrounding Arusha and experience the mountain scenery that makes this part of Tanzania so distinctive.',
-    image: '/images/experiences/mount-meru.jpg',
+      'A spacious option for guests travelling together, with an additional bed and the same relaxed atmosphere.',
+    folder: '/images/rooms/double-deluxe-extra',
+    images: [
+      {
+        file: 'hero.jpg',
+        label: 'The room',
+      },
+      {
+        file: 'room-02.jpg',
+        label: 'A closer look',
+      },
+      {
+        file: 'room-03.jpg',
+        label: 'The space',
+      },
+      {
+        file: 'bathroom.jpg',
+        label: 'Bathroom',
+      },
+      {
+        file: 'detail.jpg',
+        label: 'The details',
+      },
+      {
+        file: 'view.jpg',
+        label: 'The view',
+      },
+      {
+        file: 'signature.jpg',
+        label: 'A signature detail',
+      },
+    ],
   },
+
   {
     number: '03',
-    title: 'Arusha',
-    subtitle: 'The city around you',
+    title: 'Twin Deluxe Room',
+    subtitle: 'Made for travelling together',
     description:
-      'Take time to discover Arusha itself — its people, markets, food, culture and everyday rhythm.',
-    image:
-      'https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?auto=format&fit=crop&w=2000&q=90',
-  },
-  {
-    number: '04',
-    title: 'Tanzania',
-    subtitle: 'More to discover',
-    description:
-      'From your base in Arusha, an entire country of landscapes, wildlife and culture opens up ahead of you.',
-    image:
-      'https://images.unsplash.com/photo-1535338454770-8be927b5a00b?auto=format&fit=crop&w=2000&q=90',
+      'Two comfortable beds and a calm setting make this an easy place to return to after a day exploring Tanzania.',
+    folder: '/images/rooms/twin-deluxe',
+    images: [
+      {
+        file: 'hero.jpg',
+        label: 'The room',
+      },
+      {
+        file: 'room-02.jpg',
+        label: 'A closer look',
+      },
+      {
+        file: 'room-03.jpg',
+        label: 'The space',
+      },
+      {
+        file: 'bathroom.jpg',
+        label: 'Bathroom',
+      },
+      {
+        file: 'detail.jpg',
+        label: 'The details',
+      },
+      {
+        file: 'view.jpg',
+        label: 'The view',
+      },
+      {
+        file: 'signature.jpg',
+        label: 'A signature detail',
+      },
+    ],
   },
 ]
 
-function Experiences() {
+function Stay() {
   return (
     <main className="bg-[#11100d] text-[#f5f1e8]">
 
@@ -48,15 +129,15 @@ function Experiences() {
           HERO
       ========================================================= */}
 
-      <section className="relative flex min-h-[90vh] items-end overflow-hidden">
+      <section className="relative flex min-h-[88vh] items-end overflow-hidden">
 
         <img
-          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2400&q=90"
-          alt="African wildlife"
+          src="/images/rooms/double-deluxe/hero.jpg"
+          alt="Double Deluxe Room"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/45" />
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/30" />
 
@@ -80,25 +161,25 @@ function Experiences() {
             <div className="mb-8 flex items-center gap-5">
 
               <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
-                04
+                05
               </span>
 
               <div className="h-px w-14 bg-white/30" />
 
               <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
-                Experiences
+                The Stay
               </span>
 
             </div>
 
             <h1 className="max-w-6xl font-serif text-6xl leading-[0.88] tracking-[-0.04em] md:text-8xl lg:text-[9rem]">
 
-              Go beyond
+              Take a closer
 
               <br />
 
               <span className="italic font-light text-white/75">
-                the lodge.
+                look.
               </span>
 
             </h1>
@@ -106,15 +187,15 @@ function Experiences() {
             <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 
               <p className="max-w-lg text-sm leading-7 text-white/65">
-                Arusha is more than a place to stay. It is the doorway
-                to some of Tanzania's most unforgettable experiences.
+                Discover the rooms, details and quiet spaces that make
+                a stay at Arusha Giraffe Lodge feel like your own.
               </p>
 
               <div className="flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
 
                 <ArrowDown size={14} />
 
-                Explore Tanzania
+                Explore the stay
 
               </div>
 
@@ -131,7 +212,7 @@ function Experiences() {
           INTRO
       ========================================================= */}
 
-      <section className="px-6 py-32 md:px-10 md:py-44 lg:px-14">
+      <section className="px-6 py-32 md:px-10 md:py-40 lg:px-14">
 
         <div className="mx-auto max-w-[1500px]">
 
@@ -156,29 +237,26 @@ function Experiences() {
               className="max-w-6xl font-serif text-5xl leading-[0.95] tracking-[-0.03em] md:text-7xl lg:text-[6.5rem]"
             >
 
-              Wake up
+              Spaces made
 
               <br />
 
               <span className="italic text-white/35">
-                curious.
+                for slowing down.
               </span>
 
             </motion.h2>
 
-
             <div>
 
-              <p className="text-sm leading-8 text-white/55">
-                Every stay can become the beginning of something
-                bigger. Wildlife, mountains, culture and landscapes
-                are all within reach from Arusha.
+              <p className="text-sm leading-8 text-white/50">
+                After a day spent discovering Arusha and the landscapes
+                of northern Tanzania, come back to somewhere comfortable.
               </p>
 
               <p className="mt-7 text-sm leading-8 text-white/40">
-                Whether you have one free afternoon or several days
-                to explore, Tanzania gives you plenty of reasons to
-                step outside.
+                Explore each room through the details that make it yours —
+                from the spaces you sleep in to the views beyond them.
               </p>
 
             </div>
@@ -191,7 +269,7 @@ function Experiences() {
 
 
       {/* =========================================================
-          EXPERIENCE LIST
+          ROOMS
       ========================================================= */}
 
       <section className="px-6 pb-32 md:px-10 lg:px-14">
@@ -203,28 +281,28 @@ function Experiences() {
             <div>
 
               <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
-                Discover
+                The rooms
               </p>
 
               <h2 className="mt-4 font-serif text-4xl md:text-5xl">
-                Experiences around you
+                A closer look
               </h2>
 
             </div>
 
             <p className="hidden text-[9px] uppercase tracking-[0.3em] text-white/30 md:block">
-              04 experiences
+              03 rooms
             </p>
 
           </div>
 
 
-          <div className="space-y-24">
+          <div className="space-y-32">
 
-            {experiences.map((experience, index) => (
+            {rooms.map((room, roomIndex) => (
 
               <motion.article
-                key={experience.title}
+                key={room.title}
                 initial={{
                   opacity: 0,
                   y: 50,
@@ -235,89 +313,134 @@ function Experiences() {
                 }}
                 viewport={{
                   once: true,
-                  amount: 0.15,
+                  amount: 0.1,
                 }}
                 transition={{
                   duration: 0.8,
                 }}
               >
 
-                <div className="grid overflow-hidden bg-[#171612] lg:grid-cols-2">
+                {/* ROOM HEADER */}
 
-                  {/* IMAGE */}
+                <div className="grid gap-10 border-b border-white/10 pb-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
 
-                  <div
-                    className={`group relative min-h-[550px] overflow-hidden lg:min-h-[650px] ${
-                      index % 2 !== 0 ? 'lg:order-2' : ''
-                    }`}
-                  >
+                  <div>
 
-                    <img
-                      src={experience.image}
-                      alt={experience.title}
-                      className="absolute inset-0 h-full w-full object-cover transition duration-[1200ms] group-hover:scale-105"
-                    />
-
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-
-                    <div className="absolute left-8 top-8 md:left-10 md:top-10">
+                    <div className="flex items-center gap-5">
 
                       <span className="font-serif text-2xl text-white">
-                        {experience.number}
+                        {room.number}
+                      </span>
+
+                      <div className="h-px w-12 bg-white/20" />
+
+                      <span className="text-[9px] uppercase tracking-[0.35em] text-white/35">
+                        Room
                       </span>
 
                     </div>
 
-                  </div>
+                    <h3 className="mt-7 max-w-3xl font-serif text-5xl leading-[0.95] md:text-6xl lg:text-7xl">
 
+                      {room.title}
 
-                  {/* CONTENT */}
+                    </h3>
 
-                  <div
-                    className={`flex items-center p-10 md:p-14 lg:p-20 ${
-                      index % 2 !== 0 ? 'lg:order-1' : ''
-                    }`}
-                  >
-
-                    <div>
-
-                      <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
-                        Experience
-                      </p>
-
-                      <h3 className="mt-6 font-serif text-5xl leading-none md:text-7xl">
-                        {experience.title}
-                      </h3>
-
-                      <p className="mt-5 font-serif text-xl italic text-white/40">
-                        {experience.subtitle}
-                      </p>
-
-                      <div className="my-10 h-px w-16 bg-white/20" />
-
-                      <p className="max-w-lg text-sm leading-8 text-white/50">
-                        {experience.description}
-                      </p>
-
-                      <Link
-                        to="/contact"
-                        className="group mt-10 inline-flex items-center gap-4 border-b border-white/20 pb-3 text-[9px] uppercase tracking-[0.25em] !text-white transition hover:border-white"
-                      >
-
-                        <span className="!text-white">
-                          Plan your experience
-                        </span>
-
-                        <ArrowUpRight
-                          size={14}
-                          className="text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                        />
-
-                      </Link>
-
-                    </div>
+                    <p className="mt-5 font-serif text-xl italic text-white/40">
+                      {room.subtitle}
+                    </p>
 
                   </div>
+
+
+                  <div className="max-w-md lg:ml-auto">
+
+                    <p className="text-sm leading-8 text-white/50">
+                      {room.description}
+                    </p>
+
+                    <Link
+                      to="/rooms"
+                      className="mt-7 inline-flex items-center gap-3 border-b border-white/20 pb-2 text-[9px] uppercase tracking-[0.25em] !text-white transition hover:border-white"
+                    >
+
+                      <span className="!text-white">
+                        Explore this room
+                      </span>
+
+                      <ArrowUpRight
+                        size={13}
+                        className="text-white"
+                      />
+
+                    </Link>
+
+                  </div>
+
+                </div>
+
+
+                {/* ROOM IMAGE COLLECTION */}
+
+                <div className="mt-8 grid gap-5 md:grid-cols-2">
+
+                  {room.images.map((image, imageIndex) => (
+
+                    <motion.figure
+                      key={image.file}
+                      initial={{
+                        opacity: 0,
+                        y: 35,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        y: 0,
+                      }}
+                      viewport={{
+                        once: true,
+                        amount: 0.12,
+                      }}
+                      transition={{
+                        duration: 0.7,
+                        delay: imageIndex * 0.04,
+                      }}
+                      className={`group relative overflow-hidden ${
+                        imageIndex === 0
+                          ? 'min-h-[620px] md:col-span-2 md:min-h-[760px]'
+                          : imageIndex === 3
+                            ? 'min-h-[500px] md:min-h-[600px]'
+                            : 'min-h-[480px] md:min-h-[580px]'
+                      }`}
+                    >
+
+                      <img
+                        src={`${room.folder}/${image.file}`}
+                        alt={`${room.title} — ${image.label}`}
+                        loading={
+                          roomIndex === 0 && imageIndex < 2
+                            ? 'eager'
+                            : 'lazy'
+                        }
+                        className="absolute inset-0 h-full w-full object-cover transition duration-[1400ms] ease-out group-hover:scale-105"
+                      />
+
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/5 opacity-70 transition duration-500 group-hover:opacity-100" />
+
+                      <figcaption className="absolute bottom-0 left-0 right-0 p-7 md:p-10">
+
+                        <p className="text-[8px] uppercase tracking-[0.35em] text-white/50">
+                          {room.title}
+                        </p>
+
+                        <h4 className="mt-3 font-serif text-3xl text-white md:text-4xl">
+                          {image.label}
+                        </h4>
+
+                      </figcaption>
+
+                    </motion.figure>
+
+                  ))}
 
                 </div>
 
@@ -333,21 +456,20 @@ function Experiences() {
 
 
       {/* =========================================================
-          SAFARI MOMENT
+          MOUNT MERU
       ========================================================= */}
 
       <section className="relative min-h-[75vh] overflow-hidden">
 
         <img
-          src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2400&q=90"
-          alt="Safari landscape"
+          src="/images/experiences/mount-meru.jpg"
+          alt="Mount Meru"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/45" />
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-[#11100d]/10" />
-
 
         <div className="relative z-10 flex min-h-[75vh] items-center justify-center px-6 text-center">
 
@@ -369,17 +491,17 @@ function Experiences() {
           >
 
             <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-white/60">
-              Northern Tanzania
+              Arusha · Tanzania
             </p>
 
             <h2 className="font-serif text-5xl leading-none md:text-7xl lg:text-8xl">
 
-              Some places
+              Wake up to
 
               <br />
 
               <span className="italic text-white/65">
-                stay with you.
+                Tanzania.
               </span>
 
             </h2>
@@ -392,7 +514,7 @@ function Experiences() {
 
 
       {/* =========================================================
-          TRAVEL PHILOSOPHY
+          EXPERIENCE OF THE STAY
       ========================================================= */}
 
       <section className="px-6 py-32 md:px-10 md:py-44 lg:px-14">
@@ -404,17 +526,17 @@ function Experiences() {
             <div>
 
               <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
-                The journey
+                The experience
               </p>
 
               <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
 
-                Don't just
+                More than
 
                 <br />
 
                 <span className="italic text-white/35">
-                  visit.
+                  a room.
                 </span>
 
               </h2>
@@ -425,15 +547,16 @@ function Experiences() {
             <div>
 
               <p className="text-base leading-8 text-white/55">
-                Travel is about more than checking places off a list.
-                It is about the moments between them — the people you
-                meet, the landscapes you remember and the stories you
-                take home.
+                A stay is made up of more than where you sleep. It is
+                the quiet morning before heading out, the return after
+                a day in the wild and the small details you remember
+                long after you leave.
               </p>
 
               <p className="mt-8 text-base leading-8 text-white/40">
-                Stay at Arusha Giraffe Lodge and give yourself the time
-                to experience Tanzania at your own pace.
+                At Arusha Giraffe Lodge, your room becomes a comfortable
+                base from which to experience the landscapes, wildlife
+                and character of northern Tanzania.
               </p>
 
 
@@ -446,7 +569,7 @@ function Experiences() {
                   </p>
 
                   <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-white/35">
-                    Discover
+                    Rest
                   </p>
 
                 </div>
@@ -458,7 +581,7 @@ function Experiences() {
                   </p>
 
                   <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-white/35">
-                    Experience
+                    Explore
                   </p>
 
                 </div>
@@ -470,7 +593,7 @@ function Experiences() {
                   </p>
 
                   <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-white/35">
-                    Remember
+                    Return
                   </p>
 
                 </div>
@@ -499,24 +622,24 @@ function Experiences() {
             <div className="max-w-5xl">
 
               <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
-                Start exploring
+                Your stay
               </p>
 
               <h2 className="mt-7 font-serif text-5xl leading-[0.95] md:text-7xl lg:text-8xl">
 
-                Your next
+                Find your
 
                 <br />
 
                 <span className="italic text-white/40">
-                  adventure awaits.
+                  place in Arusha.
                 </span>
 
               </h2>
 
               <p className="mt-8 max-w-lg text-sm leading-7 text-white/45">
-                Come back to a comfortable room after a day spent
-                discovering Tanzania.
+                Choose your room and make Arusha Giraffe Lodge
+                part of your Tanzanian journey.
               </p>
 
               <Link
@@ -525,7 +648,7 @@ function Experiences() {
               >
 
                 <span className="!text-white">
-                  Plan Your Stay
+                  Book Your Stay
                 </span>
 
                 <ArrowUpRight
@@ -547,4 +670,4 @@ function Experiences() {
   )
 }
 
-export default Experiences
+export default Stay

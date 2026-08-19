@@ -8,7 +8,7 @@ import Lodge from './pages/Lodge'
 import Rooms from './pages/Rooms'
 import Dining from './pages/Dining'
 import Experiences from './pages/Experiences'
-import Gallery from './pages/Gallery'
+import Stay from './pages/Stay'
 import Contact from './pages/Contact'
 
 function App() {
@@ -21,18 +21,25 @@ function App() {
 
         <Routes>
 
+          {/* Main */}
           <Route path="/" element={<Home />} />
 
+          {/* Lodge */}
           <Route path="/lodge" element={<Lodge />} />
 
+          {/* Rooms */}
           <Route path="/rooms" element={<Rooms />} />
 
+          {/* Dining */}
           <Route path="/dining" element={<Dining />} />
 
+          {/* Experiences */}
           <Route path="/experiences" element={<Experiences />} />
 
-          <Route path="/gallery" element={<Gallery />} />
+          {/* Your Stay */}
+          <Route path="/stay" element={<Stay />} />
 
+          {/* Contact / Booking */}
           <Route path="/contact" element={<Contact />} />
 
         </Routes>

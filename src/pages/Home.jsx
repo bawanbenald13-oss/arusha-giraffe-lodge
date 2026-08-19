@@ -195,144 +195,229 @@ function Home() {
 
 
       {/* =========================================================
-          FEATURED ROOMS
-      ========================================================= */}
+    FEATURED ROOMS
+========================================================= */}
 
-      <section className="bg-[#151410] px-6 py-28 md:px-10 md:py-40 lg:px-14">
+<section className="bg-[#151410] px-6 py-28 md:px-10 md:py-40 lg:px-14">
 
-        <div className="mx-auto max-w-[1500px]">
+  <div className="mx-auto max-w-[1500px]">
 
-          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+    {/* HEADER */}
+
+    <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+
+      <div>
+
+        <p className="mb-5 text-[9px] uppercase tracking-[0.4em] text-white/35">
+          Stay with us
+        </p>
+
+        <h2 className="font-serif text-5xl md:text-7xl">
+          Rooms & stays
+        </h2>
+
+      </div>
+
+      <Link
+        to="/rooms"
+        className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] !text-white/60 transition hover:!text-white"
+      >
+
+        <span>
+          View all rooms
+        </span>
+
+        <ArrowUpRight
+          size={14}
+          className="text-white"
+        />
+
+      </Link>
+
+    </div>
+
+
+    {/* ROOMS */}
+
+    <div className="mt-16 grid gap-6 md:grid-cols-3">
+
+
+      {/* =====================================================
+          DOUBLE DELUXE ROOM
+      ===================================================== */}
+
+      <Link
+        to="/rooms"
+        className="group relative h-[560px] overflow-hidden"
+      >
+
+        <img
+          src="/images/rooms/double-deluxe/hero.jpg"
+          alt="Double Deluxe Room"
+          className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
+        />
+
+        {/* DARK GRADIENT */}
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        {/* HOVER OVERLAY */}
+
+        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
+
+
+        {/* CONTENT */}
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
+
+          <div className="flex items-end justify-between gap-4">
 
             <div>
 
-              <p className="mb-5 text-[9px] uppercase tracking-[0.4em] text-white/35">
-                Stay with us
+              <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
+                Accommodation
               </p>
 
-              <h2 className="font-serif text-5xl md:text-7xl">
-                Rooms & stays
-              </h2>
+              <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
+                Double Deluxe
+                <br />
+                Room
+              </h3>
 
             </div>
 
-
-            <Link
-              to="/rooms"
-              className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] !text-white/60 transition hover:!text-white"
-            >
-
-              <span>
-                View all rooms
-              </span>
+            <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-white group-hover:bg-white group-hover:text-[#11100d]">
 
               <ArrowUpRight
-                size={14}
-                className="text-white"
+                size={15}
+                className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
               />
 
-            </Link>
-
-          </div>
-
-
-          <div className="mt-16 grid gap-6 md:grid-cols-3">
-
-            {/* DOUBLE */}
-
-            <Link
-              to="/rooms"
-              className="group relative h-[500px] overflow-hidden"
-            >
-
-              <img
-                src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=85"
-                alt="Deluxe Double"
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
-
-              <div className="absolute bottom-0 left-0 p-7">
-
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/45">
-                  From $45 / night
-                </p>
-
-                <h3 className="mt-2 font-serif text-3xl text-white">
-                  Deluxe Double
-                </h3>
-
-              </div>
-
-            </Link>
-
-
-            {/* TWIN */}
-
-            <Link
-              to="/rooms"
-              className="group relative h-[500px] overflow-hidden"
-            >
-
-              <img
-                src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=85"
-                alt="Deluxe Twin"
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
-
-              <div className="absolute bottom-0 left-0 p-7">
-
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/45">
-                  From $50 / night
-                </p>
-
-                <h3 className="mt-2 font-serif text-3xl text-white">
-                  Deluxe Twin
-                </h3>
-
-              </div>
-
-            </Link>
-
-
-            {/* SINGLE */}
-
-            <Link
-              to="/rooms"
-              className="group relative h-[500px] overflow-hidden"
-            >
-
-              <img
-                src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=1200&q=85"
-                alt="Deluxe Single"
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
-
-              <div className="absolute bottom-0 left-0 p-7">
-
-                <p className="text-[9px] uppercase tracking-[0.3em] text-white/45">
-                  From $30 / night
-                </p>
-
-                <h3 className="mt-2 font-serif text-3xl text-white">
-                  Deluxe Single
-                </h3>
-
-              </div>
-
-            </Link>
+            </div>
 
           </div>
 
         </div>
 
-      </section>
+      </Link>
 
+
+      {/* =====================================================
+          DOUBLE DELUXE + EXTRA BED
+      ===================================================== */}
+
+      <Link
+        to="/rooms"
+        className="group relative h-[560px] overflow-hidden"
+      >
+
+        <img
+          src="/images/rooms/double-deluxe-extra/hero.jpg"
+          alt="Double Deluxe Room with Extra Bed"
+          className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
+
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
+
+          <div className="flex items-end justify-between gap-4">
+
+            <div>
+
+              <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
+                Accommodation
+              </p>
+
+              <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
+                Double Deluxe
+                <br />
+                <span className="italic font-light">
+                  with Extra Bed
+                </span>
+              </h3>
+
+            </div>
+
+            <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-white group-hover:bg-white group-hover:text-[#11100d]">
+
+              <ArrowUpRight
+                size={15}
+                className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </Link>
+
+
+      {/* =====================================================
+          TWIN DELUXE
+      ===================================================== */}
+
+      <Link
+        to="/rooms"
+        className="group relative h-[560px] overflow-hidden"
+      >
+
+        <img
+          src="/images/rooms/twin-deluxe/hero.jpg"
+          alt="Twin Deluxe Room"
+          className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
+
+
+        <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
+
+          <div className="flex items-end justify-between gap-4">
+
+            <div>
+
+              <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
+                Accommodation
+              </p>
+
+              <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
+                Twin Deluxe
+                <br />
+                <span className="italic font-light">
+                  Room
+                </span>
+              </h3>
+
+            </div>
+
+            <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-white group-hover:bg-white group-hover:text-[#11100d]">
+
+              <ArrowUpRight
+                size={15}
+                className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* =========================================================
           BOOKING CTA

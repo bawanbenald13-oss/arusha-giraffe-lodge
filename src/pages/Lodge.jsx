@@ -8,32 +8,53 @@ function Lodge() {
 
       {/* =========================================================
           HERO
+          DIFFERENT FROM HOME — QUIETER / MORE EDITORIAL
       ========================================================= */}
 
-      <section className="relative flex min-h-[90vh] items-end overflow-hidden">
+      <section className="relative min-h-[90vh] overflow-hidden">
 
-        <img
-          src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2400&q=90"
-          alt="Tanzania landscape"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        {/* IMAGE */}
 
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0">
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/30" />
+          <img
+            src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2400&q=90"
+            alt="African landscape surrounding Arusha"
+            className="h-full w-full object-cover"
+          />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 pb-20 md:px-10 md:pb-24 lg:px-14">
+          <div className="absolute inset-0 bg-black/45" />
+
+          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/20 to-transparent" />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-black/20" />
+
+        </div>
+
+
+        {/* HERO CONTENT */}
+
+        <div className="relative z-10 mx-auto flex min-h-[90vh] w-full max-w-[1500px] items-center px-6 py-32 md:px-10 lg:px-14">
 
           <motion.div
-            initial={{ opacity: 0, y: 45 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{
+              opacity: 0,
+              x: -35,
+            }}
+            animate={{
+              opacity: 1,
+              x: 0,
+            }}
             transition={{
-              duration: 1,
+              duration: 1.1,
               ease: 'easeOut',
             }}
+            className="max-w-4xl"
           >
 
-            <div className="mb-8 flex items-center gap-5">
+            {/* LABEL */}
+
+            <div className="mb-9 flex items-center gap-5">
 
               <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
                 01
@@ -47,24 +68,30 @@ function Lodge() {
 
             </div>
 
-            <h1 className="max-w-6xl font-serif text-6xl leading-[0.88] tracking-[-0.04em] md:text-8xl lg:text-[9rem]">
 
-              More than
+            {/* HEADING */}
+
+            <h1 className="font-serif text-6xl leading-[0.88] tracking-[-0.04em] md:text-8xl lg:text-[8.5rem]">
+
+              A place
 
               <br />
 
-              <span className="italic font-light text-white/75">
-                somewhere to stay.
+              <span className="italic font-light text-white/70">
+                to arrive.
               </span>
 
             </h1>
 
-            <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 
-              <p className="max-w-lg text-sm leading-7 text-white/65">
-                A relaxed base in Arusha. A place to slow down,
-                reconnect and prepare for everything Tanzania has
-                waiting beyond the lodge.
+            {/* DESCRIPTION */}
+
+            <div className="mt-10 flex max-w-2xl flex-col gap-7 md:flex-row md:items-end">
+
+              <p className="max-w-lg text-sm leading-7 text-white/65 md:text-base">
+                Arusha Giraffe Lodge is a relaxed place to pause,
+                settle in and experience the warmth of Tanzania
+                before the next part of your journey begins.
               </p>
 
               <div className="flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
@@ -78,6 +105,23 @@ function Lodge() {
             </div>
 
           </motion.div>
+
+        </div>
+
+
+        {/* SIDE DETAIL */}
+
+        <div className="absolute bottom-8 right-6 z-10 hidden md:block lg:right-14">
+
+          <div className="flex items-center gap-4">
+
+            <div className="h-px w-10 bg-white/20" />
+
+            <p className="text-[9px] uppercase tracking-[0.3em] text-white/40">
+              Sakina · Arusha · Tanzania
+            </p>
+
+          </div>
 
         </div>
 
@@ -161,7 +205,7 @@ function Lodge() {
 
             <img
               src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1800&q=90"
-              alt="African landscape"
+              alt="Tanzania landscape"
               className="absolute inset-0 h-full w-full object-cover"
             />
 
@@ -311,7 +355,7 @@ function Lodge() {
 
         <img
           src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=2400&q=90"
-          alt="African wildlife"
+          alt="African wildlife landscape"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
@@ -377,11 +421,15 @@ function Lodge() {
             </p>
 
             <h2 className="mt-6 font-serif text-5xl md:text-6xl">
+
               Arusha,
+
               <br />
+
               <span className="italic text-white/35">
                 Tanzania.
               </span>
+
             </h2>
 
           </div>
@@ -408,6 +456,7 @@ function Lodge() {
 
               </div>
 
+
               <div>
 
                 <p className="text-[8px] uppercase tracking-[0.3em] text-white/30">
@@ -419,6 +468,7 @@ function Lodge() {
                 </p>
 
               </div>
+
 
               <div>
 
