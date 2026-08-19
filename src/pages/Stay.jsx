@@ -11,34 +11,13 @@ const rooms = [
       'A warm and comfortable space designed for restful nights and easy mornings in Arusha.',
     folder: '/images/rooms/double-deluxe',
     images: [
-      {
-        file: 'hero.jpg',
-        label: 'The room',
-      },
-      {
-        file: 'room-02.jpg',
-        label: 'A closer look',
-      },
-      {
-        file: 'room-03.jpg',
-        label: 'The space',
-      },
-      {
-        file: 'bathroom.jpg',
-        label: 'Bathroom',
-      },
-      {
-        file: 'detail.jpg',
-        label: 'The details',
-      },
-      {
-        file: 'view.jpg',
-        label: 'The view',
-      },
-      {
-        file: 'signature.jpg',
-        label: 'A signature detail',
-      },
+      { file: 'hero.jpg', label: 'The room' },
+      { file: 'room-02.jpg', label: 'A closer look' },
+      { file: 'room-03.jpg', label: 'The space' },
+      { file: 'bathroom.jpg', label: 'Bathroom' },
+      { file: 'detail.jpg', label: 'The details' },
+      { file: 'view.jpg', label: 'The view' },
+      { file: 'signature.jpg', label: 'A signature detail' },
     ],
   },
 
@@ -50,34 +29,13 @@ const rooms = [
       'A spacious option for guests travelling together, with an additional bed and the same relaxed atmosphere.',
     folder: '/images/rooms/double-deluxe-extra',
     images: [
-      {
-        file: 'hero.jpg',
-        label: 'The room',
-      },
-      {
-        file: 'room-02.jpg',
-        label: 'A closer look',
-      },
-      {
-        file: 'room-03.jpg',
-        label: 'The space',
-      },
-      {
-        file: 'bathroom.jpg',
-        label: 'Bathroom',
-      },
-      {
-        file: 'detail.jpg',
-        label: 'The details',
-      },
-      {
-        file: 'view.jpg',
-        label: 'The view',
-      },
-      {
-        file: 'signature.jpg',
-        label: 'A signature detail',
-      },
+      { file: 'hero.jpg', label: 'The room' },
+      { file: 'room-02.jpg', label: 'A closer look' },
+      { file: 'room-03.jpg', label: 'The space' },
+      { file: 'bathroom.jpg', label: 'Bathroom' },
+      { file: 'detail.jpg', label: 'The details' },
+      { file: 'view.jpg', label: 'The view' },
+      { file: 'signature.jpg', label: 'A signature detail' },
     ],
   },
 
@@ -89,34 +47,13 @@ const rooms = [
       'Two comfortable beds and a calm setting make this an easy place to return to after a day exploring Tanzania.',
     folder: '/images/rooms/twin-deluxe',
     images: [
-      {
-        file: 'hero.jpg',
-        label: 'The room',
-      },
-      {
-        file: 'room-02.jpg',
-        label: 'A closer look',
-      },
-      {
-        file: 'room-03.jpg',
-        label: 'The space',
-      },
-      {
-        file: 'bathroom.jpg',
-        label: 'Bathroom',
-      },
-      {
-        file: 'detail.jpg',
-        label: 'The details',
-      },
-      {
-        file: 'view.jpg',
-        label: 'The view',
-      },
-      {
-        file: 'signature.jpg',
-        label: 'A signature detail',
-      },
+      { file: 'hero.jpg', label: 'The room' },
+      { file: 'room-02.jpg', label: 'A closer look' },
+      { file: 'room-03.jpg', label: 'The space' },
+      { file: 'bathroom.jpg', label: 'Bathroom' },
+      { file: 'detail.jpg', label: 'The details' },
+      { file: 'view.jpg', label: 'The view' },
+      { file: 'signature.jpg', label: 'A signature detail' },
     ],
   },
 ]
@@ -127,21 +64,26 @@ function Stay() {
 
       {/* =========================================================
           HERO
+          NAVBAR OVERLAYS THIS SECTION
       ========================================================= */}
 
-      <section className="relative flex min-h-[88vh] items-end overflow-hidden">
+      <section className="relative flex min-h-screen items-end overflow-hidden">
 
+        {/* HERO IMAGE — FULL BLEED TO VERY TOP */}
         <img
           src="/images/rooms/double-deluxe/hero.jpg"
           alt="Double Deluxe Room"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/45" />
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0 bg-black/40" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/30" />
+        {/* BOTTOM FADE */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/25" />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 pb-20 md:px-10 md:pb-24 lg:px-14">
+        {/* HERO CONTENT */}
+        <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 pb-20 pt-32 md:px-10 md:pb-24 lg:px-14">
 
           <motion.div
             initial={{
@@ -158,6 +100,7 @@ function Stay() {
             }}
           >
 
+            {/* PAGE NUMBER */}
             <div className="mb-8 flex items-center gap-5">
 
               <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
@@ -172,18 +115,22 @@ function Stay() {
 
             </div>
 
+
+            {/* TITLE */}
             <h1 className="max-w-6xl font-serif text-6xl leading-[0.88] tracking-[-0.04em] md:text-8xl lg:text-[9rem]">
 
               Take a closer
 
               <br />
 
-              <span className="italic font-light text-white/75">
+              <span className="font-light italic text-white/75">
                 look.
               </span>
 
             </h1>
 
+
+            {/* DESCRIPTION */}
             <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 
               <p className="max-w-lg text-sm leading-7 text-white/65">
@@ -246,6 +193,7 @@ function Stay() {
               </span>
 
             </motion.h2>
+
 
             <div>
 
@@ -341,9 +289,7 @@ function Stay() {
                     </div>
 
                     <h3 className="mt-7 max-w-3xl font-serif text-5xl leading-[0.95] md:text-6xl lg:text-7xl">
-
                       {room.title}
-
                     </h3>
 
                     <p className="mt-5 font-serif text-xl italic text-white/40">

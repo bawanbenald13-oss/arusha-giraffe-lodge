@@ -60,7 +60,9 @@ function Experiences() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/30" />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 pb-20 md:px-10 md:pb-24 lg:px-14">
+        {/* Added top spacing so the fixed navbar doesn't overlap 04 — Experiences */}
+
+        <div className="relative z-10 mx-auto flex min-h-[90vh] w-full max-w-[1500px] items-end px-6 pb-20 pt-36 md:px-10 md:pb-24 md:pt-44 lg:px-14 lg:pt-48">
 
           <motion.div
             initial={{
@@ -347,7 +349,6 @@ function Experiences() {
         <div className="absolute inset-0 bg-black/45" />
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-[#11100d]/10" />
-
 
         <div className="relative z-10 flex min-h-[75vh] items-center justify-center px-6 text-center">
 

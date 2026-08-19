@@ -78,7 +78,7 @@ function Rooms() {
             <div className="mb-8 flex items-center gap-5">
 
               <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
-                03
+                02
               </span>
 
               <div className="h-px w-14 bg-white/30" />

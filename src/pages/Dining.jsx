@@ -22,7 +22,7 @@ function Dining() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/30" />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 pb-20 md:px-10 md:pb-24 lg:px-14">
+        <div className="relative z-10 mx-auto flex min-h-[88vh] w-full max-w-[1500px] items-end px-6 pb-20 pt-36 md:px-10 md:pb-24 md:pt-44 lg:px-14 lg:pt-48">
 
           <motion.div
             initial={{ opacity: 0, y: 45 }}
@@ -164,7 +164,6 @@ function Dining() {
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10" />
 
-
             <div className="absolute bottom-0 left-0 max-w-2xl p-8 md:p-14 lg:p-16">
 
               <p className="text-[9px] uppercase tracking-[0.4em] text-white/50">
@@ -223,8 +222,6 @@ function Dining() {
 
           <div className="grid border-t border-white/10 md:grid-cols-3">
 
-            {/* BREAKFAST */}
-
             <div className="border-b border-white/10 py-10 md:border-r md:pr-10">
 
               <span className="font-serif text-2xl text-white/30">
@@ -243,8 +240,6 @@ function Dining() {
             </div>
 
 
-            {/* DINNER */}
-
             <div className="border-b border-white/10 py-10 md:border-r md:px-10">
 
               <span className="font-serif text-2xl text-white/30">
@@ -262,8 +257,6 @@ function Dining() {
 
             </div>
 
-
-            {/* PRIVATE */}
 
             <div className="border-b border-white/10 py-10 md:pl-10">
 
@@ -365,7 +358,6 @@ function Dining() {
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-[#11100d]/10" />
 
-
         <div className="relative z-10 flex min-h-[70vh] items-center justify-center px-6 text-center">
 
           <motion.div
@@ -439,7 +431,6 @@ function Dining() {
               <p className="mt-8 max-w-lg text-sm leading-7 text-white/45">
                 Make your stay in Arusha a little more memorable.
               </p>
-
 
               <Link
                 to="/contact"
