@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Home() {
   return (
-    <main className="bg-[#11100d] text-[#f5f1e8]">
+    <main className="bg-[#F7F4EC] text-[#302C25]">
 
       {/* =========================================================
           HERO
@@ -43,13 +43,13 @@ function Home() {
               Sakina · Arusha · Tanzania
             </p>
 
-            <h1 className="font-serif text-6xl leading-[0.9] tracking-[-0.04em] md:text-8xl lg:text-[9rem]">
+            <h1 className="font-serif text-6xl leading-[0.9] tracking-[-0.04em] text-white md:text-8xl lg:text-[9rem]">
 
               Stay close
 
               <br />
 
-              <span className="italic font-light">
+              <span className="italic font-light text-[#F7F4EC]">
                 to Africa.
               </span>
 
@@ -60,22 +60,22 @@ function Home() {
 
               <Link
                 to="/rooms"
-                className="inline-flex w-fit items-center gap-4 bg-black px-7 py-4 text-[10px] uppercase tracking-[0.2em] !text-white transition hover:bg-[#050505]"
+                className="inline-flex w-fit items-center gap-4 bg-[#C6A568] px-7 py-4 text-[10px] uppercase tracking-[0.2em] !text-[#302C25] transition hover:bg-[#D7BC82]"
               >
 
-                <span className="!text-white">
+                <span className="!text-[#302C25]">
                   Explore the Lodge
                 </span>
 
                 <ArrowDown
                   size={14}
-                  className="text-white"
+                  className="text-[#302C25]"
                 />
 
               </Link>
 
 
-              <p className="max-w-md text-sm leading-relaxed text-white/70">
+              <p className="max-w-md text-sm leading-relaxed text-white/75">
                 A warm African stay in Arusha, designed as a comfortable
                 starting point for your Tanzanian journey.
               </p>
@@ -110,19 +110,19 @@ function Home() {
           INTRO
       ========================================================= */}
 
-      <section className="px-6 py-28 md:px-10 md:py-40 lg:px-14">
+      <section className="bg-[#F7F4EC] px-6 py-28 md:px-10 md:py-40 lg:px-14">
 
         <div className="mx-auto max-w-[1500px]">
 
           <div className="mb-16 flex items-center gap-6">
 
-            <span className="text-[9px] uppercase tracking-[0.4em] text-white/40">
+            <span className="text-[9px] uppercase tracking-[0.4em] text-[#B08D50]">
               01
             </span>
 
-            <div className="h-px w-16 bg-white/20" />
+            <div className="h-px w-16 bg-[#C6A568]/50" />
 
-            <span className="text-[9px] uppercase tracking-[0.4em] text-white/40">
+            <span className="text-[9px] uppercase tracking-[0.4em] text-[#8B8171]">
               Welcome
             </span>
 
@@ -146,14 +146,14 @@ function Home() {
               transition={{
                 duration: 0.8,
               }}
-              className="font-serif text-5xl leading-[0.95] tracking-[-0.03em] md:text-7xl lg:text-[7rem]"
+              className="font-serif text-5xl leading-[0.95] tracking-[-0.03em] text-[#302C25] md:text-7xl lg:text-[7rem]"
             >
 
               Your gateway
 
               <br />
 
-              <span className="italic text-white/40">
+              <span className="italic text-[#8B8171]">
                 to Tanzania.
               </span>
 
@@ -162,7 +162,7 @@ function Home() {
 
             <div className="max-w-md">
 
-              <p className="text-sm leading-7 text-white/60 md:text-base">
+              <p className="text-sm leading-7 text-[#6F685D] md:text-base">
                 Set in Arusha, Arusha Giraffe Lodge offers a relaxed
                 place to stay before or after exploring the landscapes
                 and wildlife of northern Tanzania.
@@ -171,16 +171,16 @@ function Home() {
 
               <Link
                 to="/lodge"
-                className="mt-8 inline-flex items-center gap-3 border-b border-white/30 pb-2 text-[10px] uppercase tracking-[0.25em] !text-white transition hover:border-white"
+                className="mt-8 inline-flex items-center gap-3 border-b border-[#C6A568] pb-2 text-[10px] uppercase tracking-[0.25em] !text-[#302C25] transition hover:border-[#B08D50]"
               >
 
-                <span className="!text-white">
+                <span className="!text-[#302C25]">
                   Discover the lodge
                 </span>
 
                 <ArrowUpRight
                   size={14}
-                  className="text-white"
+                  className="text-[#B08D50]"
                 />
 
               </Link>
@@ -195,251 +195,246 @@ function Home() {
 
 
       {/* =========================================================
-    FEATURED ROOMS
-========================================================= */}
+          FEATURED ROOMS
+      ========================================================= */}
 
-<section className="bg-[#151410] px-6 py-28 md:px-10 md:py-40 lg:px-14">
+      <section className="bg-[#EDE8DC] px-6 py-28 md:px-10 md:py-40 lg:px-14">
 
-  <div className="mx-auto max-w-[1500px]">
+        <div className="mx-auto max-w-[1500px]">
 
-    {/* HEADER */}
+          {/* HEADER */}
 
-    <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
-
-      <div>
-
-        <p className="mb-5 text-[9px] uppercase tracking-[0.4em] text-white/35">
-          Stay with us
-        </p>
-
-        <h2 className="font-serif text-5xl md:text-7xl">
-          Rooms & stays
-        </h2>
-
-      </div>
-
-      <Link
-        to="/rooms"
-        className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] !text-white/60 transition hover:!text-white"
-      >
-
-        <span>
-          View all rooms
-        </span>
-
-        <ArrowUpRight
-          size={14}
-          className="text-white"
-        />
-
-      </Link>
-
-    </div>
-
-
-    {/* ROOMS */}
-
-    <div className="mt-16 grid gap-6 md:grid-cols-3">
-
-
-      {/* =====================================================
-          DOUBLE DELUXE ROOM
-      ===================================================== */}
-
-      <Link
-        to="/rooms"
-        className="group relative h-[560px] overflow-hidden"
-      >
-
-        <img
-          src="/images/rooms/double-deluxe/hero.jpg"
-          alt="Double Deluxe Room"
-          className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
-        />
-
-        {/* DARK GRADIENT */}
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-
-        {/* HOVER OVERLAY */}
-
-        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
-
-
-        {/* CONTENT */}
-
-        <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
-
-          <div className="flex items-end justify-between gap-4">
+          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
 
             <div>
 
-              <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
-                Accommodation
+              <p className="mb-5 text-[9px] uppercase tracking-[0.4em] text-[#B08D50]">
+                Stay with us
               </p>
 
-              <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
-                Double Deluxe
-                <br />
-                Room
-              </h3>
+              <h2 className="font-serif text-5xl text-[#302C25] md:text-7xl">
+                Rooms & stays
+              </h2>
 
             </div>
 
-            <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-white group-hover:bg-white group-hover:text-[#11100d]">
+            <Link
+              to="/rooms"
+              className="inline-flex items-center gap-3 text-[10px] uppercase tracking-[0.25em] !text-[#5F5A51] transition hover:!text-[#302C25]"
+            >
+
+              <span>
+                View all rooms
+              </span>
 
               <ArrowUpRight
-                size={15}
-                className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                size={14}
+                className="text-[#B08D50]"
               />
 
-            </div>
+            </Link>
+
+          </div>
+
+
+          {/* ROOMS */}
+
+          <div className="mt-16 grid gap-6 md:grid-cols-3">
+
+
+            {/* =====================================================
+                DOUBLE DELUXE ROOM
+            ===================================================== */}
+
+            <Link
+              to="/rooms"
+              className="group relative h-[560px] overflow-hidden"
+            >
+
+              <img
+                src="/images/rooms/double-deluxe/hero.jpg"
+                alt="Double Deluxe Room"
+                className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+              <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
+
+
+              <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
+
+                <div className="flex items-end justify-between gap-4">
+
+                  <div>
+
+                    <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/60">
+                      Accommodation
+                    </p>
+
+                    <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
+                      Double Deluxe
+                      <br />
+                      Room
+                    </h3>
+
+                  </div>
+
+                  <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-[#D7BC82] group-hover:bg-[#D7BC82] group-hover:text-[#302C25]">
+
+                    <ArrowUpRight
+                      size={15}
+                      className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </Link>
+
+
+            {/* =====================================================
+                DOUBLE DELUXE + EXTRA BED
+            ===================================================== */}
+
+            <Link
+              to="/rooms"
+              className="group relative h-[560px] overflow-hidden"
+            >
+
+              <img
+                src="/images/rooms/double-deluxe-extra/hero.jpg"
+                alt="Double Deluxe Room with Extra Bed"
+                className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+              <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
+
+
+              <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
+
+                <div className="flex items-end justify-between gap-4">
+
+                  <div>
+
+                    <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/60">
+                      Accommodation
+                    </p>
+
+                    <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
+                      Double Deluxe
+                      <br />
+                      <span className="italic font-light">
+                        with Extra Bed
+                      </span>
+                    </h3>
+
+                  </div>
+
+                  <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-[#D7BC82] group-hover:bg-[#D7BC82] group-hover:text-[#302C25]">
+
+                    <ArrowUpRight
+                      size={15}
+                      className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </Link>
+
+
+            {/* =====================================================
+                TWIN DELUXE
+            ===================================================== */}
+
+            <Link
+              to="/rooms"
+              className="group relative h-[560px] overflow-hidden"
+            >
+
+              <img
+                src="/images/rooms/twin-deluxe/hero.jpg"
+                alt="Twin Deluxe Room"
+                className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+
+              <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
+
+
+              <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
+
+                <div className="flex items-end justify-between gap-4">
+
+                  <div>
+
+                    <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/60">
+                      Accommodation
+                    </p>
+
+                    <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
+                      Twin Deluxe
+                      <br />
+                      <span className="italic font-light">
+                        Room
+                      </span>
+                    </h3>
+
+                  </div>
+
+                  <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-[#D7BC82] group-hover:bg-[#D7BC82] group-hover:text-[#302C25]">
+
+                    <ArrowUpRight
+                      size={15}
+                      className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </Link>
 
           </div>
 
         </div>
 
-      </Link>
+      </section>
 
-
-      {/* =====================================================
-          DOUBLE DELUXE + EXTRA BED
-      ===================================================== */}
-
-      <Link
-        to="/rooms"
-        className="group relative h-[560px] overflow-hidden"
-      >
-
-        <img
-          src="/images/rooms/double-deluxe-extra/hero.jpg"
-          alt="Double Deluxe Room with Extra Bed"
-          className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-
-        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
-
-
-        <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
-
-          <div className="flex items-end justify-between gap-4">
-
-            <div>
-
-              <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
-                Accommodation
-              </p>
-
-              <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
-                Double Deluxe
-                <br />
-                <span className="italic font-light">
-                  with Extra Bed
-                </span>
-              </h3>
-
-            </div>
-
-            <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-white group-hover:bg-white group-hover:text-[#11100d]">
-
-              <ArrowUpRight
-                size={15}
-                className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </Link>
-
-
-      {/* =====================================================
-          TWIN DELUXE
-      ===================================================== */}
-
-      <Link
-        to="/rooms"
-        className="group relative h-[560px] overflow-hidden"
-      >
-
-        <img
-          src="/images/rooms/twin-deluxe/hero.jpg"
-          alt="Twin Deluxe Room"
-          className="h-full w-full object-cover transition duration-1000 ease-out group-hover:scale-105"
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-
-        <div className="absolute inset-0 bg-black/0 transition duration-700 group-hover:bg-black/15" />
-
-
-        <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8">
-
-          <div className="flex items-end justify-between gap-4">
-
-            <div>
-
-              <p className="mb-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
-                Accommodation
-              </p>
-
-              <h3 className="font-serif text-3xl leading-tight text-white md:text-4xl">
-                Twin Deluxe
-                <br />
-                <span className="italic font-light">
-                  Room
-                </span>
-              </h3>
-
-            </div>
-
-            <div className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center border border-white/30 transition duration-500 group-hover:border-white group-hover:bg-white group-hover:text-[#11100d]">
-
-              <ArrowUpRight
-                size={15}
-                className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </Link>
-
-    </div>
-
-  </div>
-
-</section>
 
       {/* =========================================================
           BOOKING CTA
       ========================================================= */}
 
-      <section className="px-6 py-32 md:px-10 md:py-44 lg:px-14">
+      <section className="bg-[#F7F4EC] px-6 py-32 md:px-10 md:py-44 lg:px-14">
 
         <div className="mx-auto max-w-[1500px]">
 
-          <div className="border-t border-white/10 pt-16">
+          <div className="border-t border-[#302C25]/10 pt-16">
 
-            <p className="mb-6 text-[9px] uppercase tracking-[0.4em] text-white/35">
+            <p className="mb-6 text-[9px] uppercase tracking-[0.4em] text-[#B08D50]">
               Plan your stay
             </p>
 
-            <h2 className="max-w-5xl font-serif text-5xl leading-tight md:text-7xl lg:text-8xl">
+            <h2 className="max-w-5xl font-serif text-5xl leading-tight text-[#302C25] md:text-7xl lg:text-8xl">
 
               Your Tanzanian
 
               <br />
 
-              <span className="italic text-white/40">
+              <span className="italic text-[#8B8171]">
                 journey starts here.
               </span>
 
@@ -450,16 +445,16 @@ function Home() {
 
             <Link
               to="/contact"
-              className="group mt-12 inline-flex items-center gap-5 bg-black px-8 py-5 text-[10px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#050505]"
+              className="group mt-12 inline-flex items-center gap-5 bg-[#302C25] px-8 py-5 text-[10px] font-medium uppercase tracking-[0.25em] !text-[#F7F4EC] transition duration-300 hover:bg-[#B08D50]"
             >
 
-              <span className="!text-white">
+              <span className="!text-[#F7F4EC]">
                 Book Your Stay
               </span>
 
               <ArrowUpRight
                 size={15}
-                className="text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                className="text-[#D7BC82] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
 
             </Link>

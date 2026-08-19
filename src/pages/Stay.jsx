@@ -60,29 +60,25 @@ const rooms = [
 
 function Stay() {
   return (
-    <main className="bg-[#11100d] text-[#f5f1e8]">
+    <main className="bg-[#F7F5F0] text-[#2C2923]">
 
       {/* =========================================================
           HERO
-          NAVBAR OVERLAYS THIS SECTION
       ========================================================= */}
 
       <section className="relative flex min-h-screen items-end overflow-hidden">
 
-        {/* HERO IMAGE — FULL BLEED TO VERY TOP */}
         <img
           src="/images/rooms/double-deluxe/hero.jpg"
-          alt="Double Deluxe Room"
+          alt="Double Deluxe Room at Arusha Giraffe Lodge"
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-black/40" />
+        {/* Warm cinematic overlay */}
+        <div className="absolute inset-0 bg-black/25" />
 
-        {/* BOTTOM FADE */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-black/10 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
 
-        {/* HERO CONTENT */}
         <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 pb-20 pt-32 md:px-10 md:pb-24 lg:px-14">
 
           <motion.div
@@ -100,45 +96,42 @@ function Stay() {
             }}
           >
 
-            {/* PAGE NUMBER */}
             <div className="mb-8 flex items-center gap-5">
 
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
+              <span className="text-[9px] uppercase tracking-[0.4em] text-[#E5D5AE]">
                 05
               </span>
 
-              <div className="h-px w-14 bg-white/30" />
+              <div className="h-px w-14 bg-[#D8BE7A]/70" />
 
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/75">
                 The Stay
               </span>
 
             </div>
 
 
-            {/* TITLE */}
-            <h1 className="max-w-6xl font-serif text-6xl leading-[0.88] tracking-[-0.04em] md:text-8xl lg:text-[9rem]">
+            <h1 className="max-w-6xl font-serif text-6xl leading-[0.88] tracking-[-0.04em] text-white md:text-8xl lg:text-[9rem]">
 
               Take a closer
 
               <br />
 
-              <span className="font-light italic text-white/75">
+              <span className="font-light italic text-[#E5D5AE]">
                 look.
               </span>
 
             </h1>
 
 
-            {/* DESCRIPTION */}
             <div className="mt-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
 
-              <p className="max-w-lg text-sm leading-7 text-white/65">
+              <p className="max-w-lg text-sm leading-7 text-white/75 md:text-base">
                 Discover the rooms, details and quiet spaces that make
                 a stay at Arusha Giraffe Lodge feel like your own.
               </p>
 
-              <div className="flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-white/50">
+              <div className="flex items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-[#E5D5AE]">
 
                 <ArrowDown size={14} />
 
@@ -181,14 +174,14 @@ function Stay() {
               transition={{
                 duration: 0.9,
               }}
-              className="max-w-6xl font-serif text-5xl leading-[0.95] tracking-[-0.03em] md:text-7xl lg:text-[6.5rem]"
+              className="max-w-6xl font-serif text-5xl leading-[0.95] tracking-[-0.03em] text-[#2C2923] md:text-7xl lg:text-[6.5rem]"
             >
 
               Spaces made
 
               <br />
 
-              <span className="italic text-white/35">
+              <span className="italic text-[#B8944E]">
                 for slowing down.
               </span>
 
@@ -197,12 +190,12 @@ function Stay() {
 
             <div>
 
-              <p className="text-sm leading-8 text-white/50">
+              <p className="text-sm leading-8 text-[#5E584D]">
                 After a day spent discovering Arusha and the landscapes
                 of northern Tanzania, come back to somewhere comfortable.
               </p>
 
-              <p className="mt-7 text-sm leading-8 text-white/40">
+              <p className="mt-7 text-sm leading-8 text-[#777064]">
                 Explore each room through the details that make it yours —
                 from the spaces you sleep in to the views beyond them.
               </p>
@@ -224,21 +217,21 @@ function Stay() {
 
         <div className="mx-auto max-w-[1500px]">
 
-          <div className="mb-16 flex items-end justify-between border-b border-white/10 pb-7">
+          <div className="mb-16 flex items-end justify-between border-b border-[#D8D2C6] pb-7">
 
             <div>
 
-              <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+              <p className="text-[9px] uppercase tracking-[0.4em] text-[#B8944E]">
                 The rooms
               </p>
 
-              <h2 className="mt-4 font-serif text-4xl md:text-5xl">
+              <h2 className="mt-4 font-serif text-4xl text-[#2C2923] md:text-5xl">
                 A closer look
               </h2>
 
             </div>
 
-            <p className="hidden text-[9px] uppercase tracking-[0.3em] text-white/30 md:block">
+            <p className="hidden text-[9px] uppercase tracking-[0.3em] text-[#8B8376] md:block">
               03 rooms
             </p>
 
@@ -270,29 +263,29 @@ function Stay() {
 
                 {/* ROOM HEADER */}
 
-                <div className="grid gap-10 border-b border-white/10 pb-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+                <div className="grid gap-10 border-b border-[#D8D2C6] pb-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
 
                   <div>
 
                     <div className="flex items-center gap-5">
 
-                      <span className="font-serif text-2xl text-white">
+                      <span className="font-serif text-2xl text-[#B8944E]">
                         {room.number}
                       </span>
 
-                      <div className="h-px w-12 bg-white/20" />
+                      <div className="h-px w-12 bg-[#C9B98F]" />
 
-                      <span className="text-[9px] uppercase tracking-[0.35em] text-white/35">
+                      <span className="text-[9px] uppercase tracking-[0.35em] text-[#8B8376]">
                         Room
                       </span>
 
                     </div>
 
-                    <h3 className="mt-7 max-w-3xl font-serif text-5xl leading-[0.95] md:text-6xl lg:text-7xl">
+                    <h3 className="mt-7 max-w-3xl font-serif text-5xl leading-[0.95] tracking-[-0.02em] text-[#2C2923] md:text-6xl lg:text-7xl">
                       {room.title}
                     </h3>
 
-                    <p className="mt-5 font-serif text-xl italic text-white/40">
+                    <p className="mt-5 font-serif text-xl italic text-[#9A7B43]">
                       {room.subtitle}
                     </p>
 
@@ -301,22 +294,22 @@ function Stay() {
 
                   <div className="max-w-md lg:ml-auto">
 
-                    <p className="text-sm leading-8 text-white/50">
+                    <p className="text-sm leading-8 text-[#625C51]">
                       {room.description}
                     </p>
 
                     <Link
                       to="/rooms"
-                      className="mt-7 inline-flex items-center gap-3 border-b border-white/20 pb-2 text-[9px] uppercase tracking-[0.25em] !text-white transition hover:border-white"
+                      className="group mt-7 inline-flex items-center gap-3 border-b border-[#B8944E]/50 pb-2 text-[9px] uppercase tracking-[0.25em] !text-[#514A3F] transition hover:border-[#B8944E]"
                     >
 
-                      <span className="!text-white">
+                      <span className="!text-[#514A3F]">
                         Explore this room
                       </span>
 
                       <ArrowUpRight
                         size={13}
-                        className="text-white"
+                        className="text-[#B8944E] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                       />
 
                     </Link>
@@ -370,11 +363,11 @@ function Stay() {
                         className="absolute inset-0 h-full w-full object-cover transition duration-[1400ms] ease-out group-hover:scale-105"
                       />
 
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-black/5 opacity-70 transition duration-500 group-hover:opacity-100" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent opacity-70 transition duration-500 group-hover:opacity-90" />
 
                       <figcaption className="absolute bottom-0 left-0 right-0 p-7 md:p-10">
 
-                        <p className="text-[8px] uppercase tracking-[0.35em] text-white/50">
+                        <p className="text-[8px] uppercase tracking-[0.35em] text-[#E5D5AE]">
                           {room.title}
                         </p>
 
@@ -413,9 +406,9 @@ function Stay() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-black/35" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-[#11100d]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/10" />
 
         <div className="relative z-10 flex min-h-[75vh] items-center justify-center px-6 text-center">
 
@@ -436,17 +429,17 @@ function Stay() {
             }}
           >
 
-            <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-white/60">
+            <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-[#E5D5AE]">
               Arusha · Tanzania
             </p>
 
-            <h2 className="font-serif text-5xl leading-none md:text-7xl lg:text-8xl">
+            <h2 className="font-serif text-5xl leading-none text-white md:text-7xl lg:text-8xl">
 
               Wake up to
 
               <br />
 
-              <span className="italic text-white/65">
+              <span className="italic text-[#E5D5AE]">
                 Tanzania.
               </span>
 
@@ -471,17 +464,17 @@ function Stay() {
 
             <div>
 
-              <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+              <p className="text-[9px] uppercase tracking-[0.4em] text-[#B8944E]">
                 The experience
               </p>
 
-              <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
+              <h2 className="mt-6 font-serif text-5xl leading-tight text-[#2C2923] md:text-6xl">
 
                 More than
 
                 <br />
 
-                <span className="italic text-white/35">
+                <span className="italic text-[#B8944E]">
                   a room.
                 </span>
 
@@ -492,29 +485,29 @@ function Stay() {
 
             <div>
 
-              <p className="text-base leading-8 text-white/55">
+              <p className="text-base leading-8 text-[#555045]">
                 A stay is made up of more than where you sleep. It is
                 the quiet morning before heading out, the return after
                 a day in the wild and the small details you remember
                 long after you leave.
               </p>
 
-              <p className="mt-8 text-base leading-8 text-white/40">
+              <p className="mt-8 text-base leading-8 text-[#777064]">
                 At Arusha Giraffe Lodge, your room becomes a comfortable
                 base from which to experience the landscapes, wildlife
                 and character of northern Tanzania.
               </p>
 
 
-              <div className="mt-12 grid gap-8 border-t border-white/10 pt-10 sm:grid-cols-3">
+              <div className="mt-12 grid gap-8 border-t border-[#D8D2C6] pt-10 sm:grid-cols-3">
 
                 <div>
 
-                  <p className="font-serif text-3xl">
+                  <p className="font-serif text-3xl text-[#B8944E]">
                     01
                   </p>
 
-                  <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-white/35">
+                  <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#827A6E]">
                     Rest
                   </p>
 
@@ -522,11 +515,11 @@ function Stay() {
 
                 <div>
 
-                  <p className="font-serif text-3xl">
+                  <p className="font-serif text-3xl text-[#B8944E]">
                     02
                   </p>
 
-                  <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-white/35">
+                  <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#827A6E]">
                     Explore
                   </p>
 
@@ -534,11 +527,11 @@ function Stay() {
 
                 <div>
 
-                  <p className="font-serif text-3xl">
+                  <p className="font-serif text-3xl text-[#B8944E]">
                     03
                   </p>
 
-                  <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-white/35">
+                  <p className="mt-3 text-[9px] uppercase tracking-[0.25em] text-[#827A6E]">
                     Return
                   </p>
 
@@ -563,34 +556,38 @@ function Stay() {
 
         <div className="mx-auto max-w-[1500px]">
 
-          <div className="relative overflow-hidden bg-[#171612] px-8 py-24 md:px-16 md:py-32">
+          <div className="relative overflow-hidden bg-[#EDE8DE] px-8 py-24 md:px-16 md:py-32">
+
+            {/* subtle gold accent */}
+
+            <div className="absolute right-0 top-0 h-full w-px bg-[#B8944E]/30" />
 
             <div className="max-w-5xl">
 
-              <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+              <p className="text-[9px] uppercase tracking-[0.4em] text-[#B8944E]">
                 Your stay
               </p>
 
-              <h2 className="mt-7 font-serif text-5xl leading-[0.95] md:text-7xl lg:text-8xl">
+              <h2 className="mt-7 font-serif text-5xl leading-[0.95] text-[#2C2923] md:text-7xl lg:text-8xl">
 
                 Find your
 
                 <br />
 
-                <span className="italic text-white/40">
+                <span className="italic text-[#B8944E]">
                   place in Arusha.
                 </span>
 
               </h2>
 
-              <p className="mt-8 max-w-lg text-sm leading-7 text-white/45">
+              <p className="mt-8 max-w-lg text-sm leading-7 text-[#686155]">
                 Choose your room and make Arusha Giraffe Lodge
                 part of your Tanzanian journey.
               </p>
 
               <Link
                 to="/contact"
-                className="mt-12 inline-flex items-center gap-5 bg-black px-8 py-5 text-[9px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#050505]"
+                className="group mt-12 inline-flex items-center gap-5 bg-[#2C2923] px-8 py-5 text-[9px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#B8944E]"
               >
 
                 <span className="!text-white">
@@ -599,7 +596,7 @@ function Stay() {
 
                 <ArrowUpRight
                   size={15}
-                  className="text-white"
+                  className="text-[#E5D5AE] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
                 />
 
               </Link>

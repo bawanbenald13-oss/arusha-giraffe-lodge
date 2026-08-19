@@ -9,7 +9,7 @@ import {
 
 function Contact() {
   return (
-    <main className="bg-[#11100d] text-[#f5f1e8]">
+    <main className="bg-[#f6f3ed] text-[#201d18]">
 
       {/* =========================================================
           HERO
@@ -23,11 +23,13 @@ function Contact() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/50" />
+        {/* WARM LIGHT OVERLAY */}
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/10 to-[#11100d]" />
+        <div className="absolute inset-0 bg-[#17140f]/25" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#17140f]/45 via-transparent to-[#f6f3ed]" />
+
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f6f3ed] via-transparent to-transparent" />
 
 
         {/* HERO CONTENT */}
@@ -54,13 +56,13 @@ function Contact() {
 
             <div className="mb-8 flex items-center gap-5">
 
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/80">
                 06
               </span>
 
-              <div className="h-px w-14 bg-white/30" />
+              <div className="h-px w-14 bg-[#d4af62]" />
 
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/80">
                 Contact
               </span>
 
@@ -69,13 +71,13 @@ function Contact() {
 
             {/* HEADING */}
 
-            <h1 className="max-w-5xl font-serif text-5xl leading-[0.88] tracking-[-0.04em] sm:text-6xl md:text-8xl lg:text-[7.8rem] xl:text-[8.5rem]">
+            <h1 className="max-w-5xl font-serif text-5xl leading-[0.88] tracking-[-0.04em] text-white sm:text-6xl md:text-8xl lg:text-[7.8rem] xl:text-[8.5rem]">
 
               Let's plan
 
               <br />
 
-              <span className="italic font-light text-white/75">
+              <span className="italic font-light text-[#f2d28b]">
                 your stay.
               </span>
 
@@ -86,16 +88,16 @@ function Contact() {
 
             <div className="mt-10 flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
 
-              <p className="max-w-xl text-sm leading-7 text-white/65 md:text-base">
+              <p className="max-w-xl text-sm leading-7 text-white/80 md:text-base">
 
                 Tell us a little about your trip and we'll help you
                 plan your stay at Arusha Giraffe Lodge.
 
               </p>
 
-              <div className="hidden items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-white/45 md:flex">
+              <div className="hidden items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-white/70 md:flex">
 
-                <span className="h-px w-10 bg-white/20" />
+                <span className="h-px w-10 bg-[#d4af62]" />
 
                 Begin your journey
 
@@ -122,23 +124,23 @@ function Contact() {
 
           <div>
 
-            <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+            <p className="text-[9px] uppercase tracking-[0.4em] text-[#a4864a]">
               Reservations
             </p>
 
-            <h2 className="mt-6 font-serif text-5xl leading-tight md:text-6xl">
+            <h2 className="mt-6 font-serif text-5xl leading-tight text-[#201d18] md:text-6xl">
 
               Make an
 
               <br />
 
-              <span className="italic text-white/35">
+              <span className="italic text-[#a4864a]/60">
                 enquiry.
               </span>
 
             </h2>
 
-            <p className="mt-8 max-w-sm text-sm leading-7 text-white/45">
+            <p className="mt-8 max-w-sm text-sm leading-7 text-[#625d54]">
               Complete the form and our team can get back to you
               regarding availability, rooms and your plans in Tanzania.
             </p>
@@ -146,7 +148,7 @@ function Contact() {
 
             {/* CONTACT DETAILS */}
 
-            <div className="mt-12 space-y-7 border-t border-white/10 pt-10">
+            <div className="mt-12 space-y-7 border-t border-[#c9b98f]/40 pt-10">
 
               {/* PHONE */}
 
@@ -154,18 +156,18 @@ function Contact() {
 
                 <Phone
                   size={17}
-                  className="mt-1 shrink-0 text-white/40"
+                  className="mt-1 shrink-0 text-[#b08b43]"
                 />
 
                 <div>
 
-                  <p className="text-[8px] uppercase tracking-[0.3em] text-white/30">
+                  <p className="text-[8px] uppercase tracking-[0.3em] text-[#8c826f]">
                     Phone / WhatsApp
                   </p>
 
                   <a
                     href="tel:+255746380392"
-                    className="mt-2 block text-sm text-white/65 transition hover:text-white"
+                    className="mt-2 block text-sm text-[#302c26] transition hover:text-[#a4864a]"
                   >
                     +255 746 380 392
                   </a>
@@ -181,18 +183,18 @@ function Contact() {
 
                 <Mail
                   size={17}
-                  className="mt-1 shrink-0 text-white/40"
+                  className="mt-1 shrink-0 text-[#b08b43]"
                 />
 
                 <div>
 
-                  <p className="text-[8px] uppercase tracking-[0.3em] text-white/30">
+                  <p className="text-[8px] uppercase tracking-[0.3em] text-[#8c826f]">
                     Email
                   </p>
 
                   <a
                     href="mailto:info@arusha-giraffelodge.com"
-                    className="mt-2 block text-sm text-white/65 transition hover:text-white"
+                    className="mt-2 block text-sm text-[#302c26] transition hover:text-[#a4864a]"
                   >
                     info@arusha-giraffelodge.com
                   </a>
@@ -208,16 +210,16 @@ function Contact() {
 
                 <MapPin
                   size={17}
-                  className="mt-1 shrink-0 text-white/40"
+                  className="mt-1 shrink-0 text-[#b08b43]"
                 />
 
                 <div>
 
-                  <p className="text-[8px] uppercase tracking-[0.3em] text-white/30">
+                  <p className="text-[8px] uppercase tracking-[0.3em] text-[#8c826f]">
                     Location
                   </p>
 
-                  <p className="mt-2 text-sm text-white/65">
+                  <p className="mt-2 text-sm text-[#302c26]">
                     Arusha, Tanzania
                   </p>
 
@@ -248,7 +250,7 @@ function Contact() {
             transition={{
               duration: 0.8,
             }}
-            className="bg-[#171612] p-7 md:p-10 lg:p-14"
+            className="border border-[#d6c7a6] bg-[#fffdf9] p-7 shadow-[0_20px_70px_rgba(82,64,32,0.06)] md:p-10 lg:p-14"
           >
 
             <form className="space-y-9">
@@ -259,7 +261,7 @@ function Contact() {
 
                 <label
                   htmlFor="name"
-                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                 >
                   Full name
                 </label>
@@ -268,7 +270,7 @@ function Contact() {
                   id="name"
                   type="text"
                   placeholder="Your name"
-                  className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none placeholder:text-white/20 transition focus:border-white/50"
+                  className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#201d18] outline-none placeholder:text-[#a9a095] transition focus:border-[#b08b43]"
                 />
 
               </div>
@@ -280,7 +282,7 @@ function Contact() {
 
                 <label
                   htmlFor="email"
-                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                 >
                   Email address
                 </label>
@@ -289,7 +291,7 @@ function Contact() {
                   id="email"
                   type="email"
                   placeholder="you@example.com"
-                  className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none placeholder:text-white/20 transition focus:border-white/50"
+                  className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#201d18] outline-none placeholder:text-[#a9a095] transition focus:border-[#b08b43]"
                 />
 
               </div>
@@ -301,7 +303,7 @@ function Contact() {
 
                 <label
                   htmlFor="phone"
-                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                 >
                   Phone / WhatsApp
                 </label>
@@ -310,7 +312,7 @@ function Contact() {
                   id="phone"
                   type="tel"
                   placeholder="+255 746 380 392"
-                  className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none placeholder:text-white/20 transition focus:border-white/50"
+                  className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#201d18] outline-none placeholder:text-[#a9a095] transition focus:border-[#b08b43]"
                 />
 
               </div>
@@ -324,7 +326,7 @@ function Contact() {
 
                   <label
                     htmlFor="arrival"
-                    className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                    className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                   >
                     Arrival
                   </label>
@@ -332,7 +334,7 @@ function Contact() {
                   <input
                     id="arrival"
                     type="date"
-                    className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none transition focus:border-white/50"
+                    className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#403a31] outline-none transition focus:border-[#b08b43]"
                   />
 
                 </div>
@@ -342,7 +344,7 @@ function Contact() {
 
                   <label
                     htmlFor="departure"
-                    className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                    className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                   >
                     Departure
                   </label>
@@ -350,7 +352,7 @@ function Contact() {
                   <input
                     id="departure"
                     type="date"
-                    className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none transition focus:border-white/50"
+                    className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#403a31] outline-none transition focus:border-[#b08b43]"
                   />
 
                 </div>
@@ -364,7 +366,7 @@ function Contact() {
 
                 <label
                   htmlFor="guests"
-                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                 >
                   Number of guests
                 </label>
@@ -372,36 +374,21 @@ function Contact() {
                 <select
                   id="guests"
                   defaultValue=""
-                  className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none transition focus:border-white/50"
+                  className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#403a31] outline-none transition focus:border-[#b08b43]"
                 >
 
                   <option
                     value=""
                     disabled
-                    className="bg-[#171612]"
                   >
                     Select guests
                   </option>
 
-                  <option className="bg-[#171612]">
-                    1 Guest
-                  </option>
-
-                  <option className="bg-[#171612]">
-                    2 Guests
-                  </option>
-
-                  <option className="bg-[#171612]">
-                    3 Guests
-                  </option>
-
-                  <option className="bg-[#171612]">
-                    4 Guests
-                  </option>
-
-                  <option className="bg-[#171612]">
-                    5+ Guests
-                  </option>
+                  <option>1 Guest</option>
+                  <option>2 Guests</option>
+                  <option>3 Guests</option>
+                  <option>4 Guests</option>
+                  <option>5+ Guests</option>
 
                 </select>
 
@@ -414,7 +401,7 @@ function Contact() {
 
                 <label
                   htmlFor="room"
-                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                 >
                   Preferred room
                 </label>
@@ -422,30 +409,29 @@ function Contact() {
                 <select
                   id="room"
                   defaultValue=""
-                  className="w-full border-b border-white/15 bg-transparent px-0 py-4 text-sm text-white outline-none transition focus:border-white/50"
+                  className="w-full border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm text-[#403a31] outline-none transition focus:border-[#b08b43]"
                 >
 
                   <option
                     value=""
                     disabled
-                    className="bg-[#171612]"
                   >
                     Select a room
                   </option>
 
-                  <option className="bg-[#171612]">
+                  <option>
                     Double Deluxe Room
                   </option>
 
-                  <option className="bg-[#171612]">
+                  <option>
                     Double Deluxe Room with Extra Bed
                   </option>
 
-                  <option className="bg-[#171612]">
+                  <option>
                     Twin Deluxe Room
                   </option>
 
-                  <option className="bg-[#171612]">
+                  <option>
                     Not sure yet
                   </option>
 
@@ -460,7 +446,7 @@ function Contact() {
 
                 <label
                   htmlFor="message"
-                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-white/35"
+                  className="mb-3 block text-[8px] uppercase tracking-[0.35em] text-[#8c826f]"
                 >
                   Message
                 </label>
@@ -469,7 +455,7 @@ function Contact() {
                   id="message"
                   rows={4}
                   placeholder="Tell us about your trip..."
-                  className="w-full resize-none border-b border-white/15 bg-transparent px-0 py-4 text-sm leading-7 text-white outline-none placeholder:text-white/20 transition focus:border-white/50"
+                  className="w-full resize-none border-b border-[#cfc4ad] bg-transparent px-0 py-4 text-sm leading-7 text-[#201d18] outline-none placeholder:text-[#a9a095] transition focus:border-[#b08b43]"
                 />
 
               </div>
@@ -479,7 +465,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="group inline-flex w-full items-center justify-center gap-5 bg-black px-8 py-5 text-[9px] font-medium uppercase tracking-[0.3em] !text-white transition duration-300 hover:bg-[#050505]"
+                className="group inline-flex w-full items-center justify-center gap-5 bg-[#201d18] px-8 py-5 text-[9px] font-medium uppercase tracking-[0.3em] !text-white transition duration-300 hover:bg-[#a4864a]"
               >
 
                 <span className="!text-white">
@@ -488,7 +474,7 @@ function Contact() {
 
                 <Send
                   size={14}
-                  className="text-white transition-transform duration-300 group-hover:translate-x-1"
+                  className="text-[#e8ca87] transition-transform duration-300 group-hover:translate-x-1"
                 />
 
               </button>
@@ -514,23 +500,25 @@ function Contact() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-[#1c1810]/35" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-[#11100d]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#f6f3ed] via-transparent to-[#f6f3ed]/10" />
 
         <div className="relative z-10 flex min-h-[65vh] items-center justify-center px-6 text-center">
 
           <div>
 
-            <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-white/60">
+            <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-white/80">
               Find us in
             </p>
 
-            <h2 className="font-serif text-6xl md:text-8xl">
+            <h2 className="font-serif text-6xl text-white md:text-8xl">
               Arusha
             </h2>
 
-            <p className="mx-auto mt-6 max-w-md text-sm leading-7 text-white/60">
+            <div className="mx-auto mt-6 h-px w-12 bg-[#d4af62]" />
+
+            <p className="mx-auto mt-6 max-w-md text-sm leading-7 text-white/75">
               Your gateway to northern Tanzania.
             </p>
 
@@ -549,17 +537,17 @@ function Contact() {
 
         <div className="mx-auto max-w-[1200px] text-center">
 
-          <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+          <p className="text-[9px] uppercase tracking-[0.4em] text-[#a4864a]">
             Arusha Giraffe Lodge
           </p>
 
-          <h2 className="mt-7 font-serif text-5xl leading-none md:text-7xl lg:text-8xl">
+          <h2 className="mt-7 font-serif text-5xl leading-none text-[#201d18] md:text-7xl lg:text-8xl">
 
             We look forward
 
             <br />
 
-            <span className="italic text-white/40">
+            <span className="italic text-[#a4864a]/60">
               to welcoming you.
             </span>
 
@@ -567,7 +555,7 @@ function Contact() {
 
           <a
             href="mailto:info@arusha-giraffelodge.com"
-            className="group mt-12 inline-flex items-center gap-5 bg-black px-8 py-5 text-[9px] font-medium uppercase tracking-[0.3em] !text-white transition duration-300 hover:bg-[#050505]"
+            className="group mt-12 inline-flex items-center gap-5 bg-[#201d18] px-8 py-5 text-[9px] font-medium uppercase tracking-[0.3em] !text-white transition duration-300 hover:bg-[#a4864a]"
           >
 
             <span className="!text-white">
@@ -576,7 +564,7 @@ function Contact() {
 
             <ArrowUpRight
               size={15}
-              className="text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              className="text-[#e8ca87] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
             />
 
           </a>

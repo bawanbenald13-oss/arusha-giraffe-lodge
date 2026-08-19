@@ -37,7 +37,7 @@ const rooms = [
 
 function Rooms() {
   return (
-    <main className="bg-[#11100d] text-[#f5f1e8]">
+    <main className="bg-[#F7F4EC] text-[#302C25]">
 
       {/* =========================================================
           HERO
@@ -55,7 +55,7 @@ function Rooms() {
 
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-transparent" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#302C25] via-transparent to-transparent" />
 
         <div className="relative z-10 mx-auto flex min-h-[88vh] w-full max-w-[1500px] items-end px-6 pb-20 pt-48 md:px-10 md:pb-24 md:pt-52 lg:px-14 lg:pb-28">
 
@@ -77,25 +77,25 @@ function Rooms() {
 
             <div className="mb-8 flex items-center gap-5">
 
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
+              <span className="text-[9px] uppercase tracking-[0.4em] text-[#D7BC82]">
                 02
               </span>
 
-              <div className="h-px w-14 bg-white/30" />
+              <div className="h-px w-14 bg-[#D7BC82]/60" />
 
-              <span className="text-[9px] uppercase tracking-[0.4em] text-white/60">
+              <span className="text-[9px] uppercase tracking-[0.4em] text-white/70">
                 Rooms & Suites
               </span>
 
             </div>
 
-            <h1 className="max-w-5xl font-serif text-5xl leading-[0.88] tracking-[-0.04em] sm:text-6xl md:text-8xl lg:text-[7.8rem] xl:text-[8.5rem]">
+            <h1 className="max-w-5xl font-serif text-5xl leading-[0.88] tracking-[-0.04em] text-white sm:text-6xl md:text-8xl lg:text-[7.8rem] xl:text-[8.5rem]">
 
               Stay
 
               <br />
 
-              <span className="italic font-light text-white/75">
+              <span className="italic font-light text-[#F7F4EC]/80">
                 beautifully.
               </span>
 
@@ -103,12 +103,12 @@ function Rooms() {
 
             <div className="mt-10 flex flex-col gap-7 md:flex-row md:items-end md:justify-between">
 
-              <p className="max-w-xl text-sm leading-7 text-white/65 md:text-base">
+              <p className="max-w-xl text-sm leading-7 text-white/70 md:text-base">
                 Thoughtfully designed spaces where comfort, calm and
                 the character of Tanzania come together.
               </p>
 
-              <div className="hidden items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-white/45 md:flex">
+              <div className="hidden items-center gap-3 text-[9px] uppercase tracking-[0.3em] text-[#D7BC82] md:flex">
 
                 <ArrowDown size={14} />
 
@@ -129,7 +129,7 @@ function Rooms() {
           INTRO
       ========================================================= */}
 
-      <section className="px-6 py-28 md:px-10 md:py-36 lg:px-14">
+      <section className="bg-[#F7F4EC] px-6 py-28 md:px-10 md:py-36 lg:px-14">
 
         <div className="mx-auto max-w-[1500px]">
 
@@ -151,20 +151,20 @@ function Rooms() {
               transition={{
                 duration: 0.9,
               }}
-              className="font-serif text-5xl leading-[0.95] tracking-[-0.03em] md:text-7xl lg:text-[6rem]"
+              className="font-serif text-5xl leading-[0.95] tracking-[-0.03em] text-[#302C25] md:text-7xl lg:text-[6rem]"
             >
 
               Your room should feel
 
               <br />
 
-              <span className="italic text-white/35">
+              <span className="italic text-[#8B8171]">
                 like a retreat.
               </span>
 
             </motion.h2>
 
-            <p className="max-w-md text-sm leading-8 text-white/45">
+            <p className="max-w-md text-sm leading-8 text-[#6F685D]">
               After a day exploring Arusha and the surrounding landscapes,
               return to a space designed for rest, privacy and comfort.
             </p>
@@ -180,25 +180,25 @@ function Rooms() {
           ROOMS
       ========================================================= */}
 
-      <section className="px-6 pb-32 md:px-10 lg:px-14">
+      <section className="bg-[#EDE8DC] px-6 pb-32 pt-10 md:px-10 lg:px-14">
 
         <div className="mx-auto max-w-[1500px]">
 
-          <div className="mb-12 flex items-end justify-between border-b border-white/10 pb-6">
+          <div className="mb-12 flex items-end justify-between border-b border-[#302C25]/10 pb-6">
 
             <div>
 
-              <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+              <p className="text-[9px] uppercase tracking-[0.4em] text-[#B08D50]">
                 Accommodation
               </p>
 
-              <h2 className="mt-4 font-serif text-4xl md:text-5xl">
+              <h2 className="mt-4 font-serif text-4xl text-[#302C25] md:text-5xl">
                 Choose your stay
               </h2>
 
             </div>
 
-            <p className="hidden text-[9px] uppercase tracking-[0.3em] text-white/30 md:block">
+            <p className="hidden text-[9px] uppercase tracking-[0.3em] text-[#8B8171] md:block">
               03 rooms
             </p>
 
@@ -233,21 +233,21 @@ function Rooms() {
                     ROOM HEADER
                 ================================================= */}
 
-                <div className="mb-8 flex items-end justify-between border-b border-white/10 pb-6">
+                <div className="mb-8 flex items-end justify-between border-b border-[#302C25]/10 pb-6">
 
                   <div>
 
-                    <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
+                    <p className="text-[9px] uppercase tracking-[0.4em] text-[#8B8171]">
                       Accommodation
                     </p>
 
-                    <h3 className="mt-4 max-w-3xl font-serif text-4xl leading-[0.95] tracking-[-0.02em] md:text-6xl lg:text-7xl">
+                    <h3 className="mt-4 max-w-3xl font-serif text-4xl leading-[0.95] tracking-[-0.02em] text-[#302C25] md:text-6xl lg:text-7xl">
                       {room.name}
                     </h3>
 
                   </div>
 
-                  <span className="hidden text-[9px] uppercase tracking-[0.35em] text-white/30 md:block">
+                  <span className="hidden text-[9px] uppercase tracking-[0.35em] text-[#B08D50] md:block">
                     {room.number}
                   </span>
 
@@ -270,7 +270,7 @@ function Rooms() {
 
                   <div className="absolute bottom-7 left-7 md:bottom-10 md:left-10">
 
-                    <span className="text-[9px] uppercase tracking-[0.35em] text-white/60">
+                    <span className="text-[9px] uppercase tracking-[0.35em] text-white/65">
                       0{index + 1} / 03
                     </span>
 
@@ -287,13 +287,13 @@ function Rooms() {
 
                   <div>
 
-                    <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">
+                    <p className="text-[9px] uppercase tracking-[0.4em] text-[#B08D50]">
                       The room
                     </p>
 
-                    <div className="mt-6 h-px w-14 bg-white/20" />
+                    <div className="mt-6 h-px w-14 bg-[#C6A568]/60" />
 
-                    <p className="mt-7 text-[9px] uppercase tracking-[0.25em] text-white/35">
+                    <p className="mt-7 text-[9px] uppercase tracking-[0.25em] text-[#8B8171]">
                       {room.details}
                     </p>
 
@@ -301,22 +301,22 @@ function Rooms() {
 
                   <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
 
-                    <p className="max-w-xl text-sm leading-8 text-white/45 md:text-base">
+                    <p className="max-w-xl text-sm leading-8 text-[#6F685D] md:text-base">
                       {room.description}
                     </p>
 
                     <Link
                       to="/contact"
-                      className="group/button inline-flex shrink-0 items-center gap-5 bg-black px-7 py-5 text-[9px] font-medium uppercase tracking-[0.25em] !text-white transition duration-300 hover:bg-[#050505]"
+                      className="group/button inline-flex shrink-0 items-center gap-5 bg-[#302C25] px-7 py-5 text-[9px] font-medium uppercase tracking-[0.25em] !text-[#F7F4EC] transition duration-300 hover:bg-[#B08D50]"
                     >
 
-                      <span className="!text-white">
+                      <span className="!text-[#F7F4EC]">
                         Book Your Stay
                       </span>
 
                       <ArrowUpRight
                         size={15}
-                        className="text-white transition-transform duration-300 group-hover/button:translate-x-1 group-hover/button:-translate-y-1"
+                        className="text-[#D7BC82] transition-transform duration-300 group-hover/button:translate-x-1 group-hover/button:-translate-y-1"
                       />
 
                     </Link>
@@ -388,7 +388,7 @@ function Rooms() {
 
                     <div className="absolute bottom-7 left-7">
 
-                      <span className="text-[9px] uppercase tracking-[0.35em] text-white/60">
+                      <span className="text-[9px] uppercase tracking-[0.35em] text-white/65">
                         Private details
                       </span>
 
@@ -403,13 +403,13 @@ function Rooms() {
                     ROOM CLOSING
                 ================================================= */}
 
-                <div className="mt-12 flex flex-col gap-5 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
+                <div className="mt-12 flex flex-col gap-5 border-t border-[#302C25]/10 pt-6 md:flex-row md:items-center md:justify-between">
 
-                  <p className="text-[9px] uppercase tracking-[0.35em] text-white/30">
+                  <p className="text-[9px] uppercase tracking-[0.35em] text-[#8B8171]">
                     {room.name}
                   </p>
 
-                  <p className="text-[9px] uppercase tracking-[0.3em] text-white/25">
+                  <p className="text-[9px] uppercase tracking-[0.3em] text-[#B08D50]">
                     0{index + 1}
                   </p>
 
@@ -440,7 +440,7 @@ function Rooms() {
 
         <div className="absolute inset-0 bg-black/45" />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#11100d] via-transparent to-[#11100d]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#302C25] via-transparent to-[#302C25]/10" />
 
         <div className="relative z-10 flex min-h-[70vh] items-center justify-center px-6 text-center">
 
@@ -461,17 +461,17 @@ function Rooms() {
             }}
           >
 
-            <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-white/60">
+            <p className="mb-7 text-[9px] uppercase tracking-[0.45em] text-[#D7BC82]">
               Beyond your room
             </p>
 
-            <h2 className="font-serif text-5xl leading-none md:text-7xl lg:text-8xl">
+            <h2 className="font-serif text-5xl leading-none text-white md:text-7xl lg:text-8xl">
 
               Wake up
 
               <br />
 
-              <span className="italic text-white/65">
+              <span className="italic text-[#F7F4EC]/75">
                 to Tanzania.
               </span>
 
@@ -488,21 +488,21 @@ function Rooms() {
           FINAL CTA
       ========================================================= */}
 
-      <section className="px-6 py-32 md:px-10 md:py-44 lg:px-14">
+      <section className="bg-[#F7F4EC] px-6 py-32 md:px-10 md:py-44 lg:px-14">
 
         <div className="mx-auto max-w-[1200px] text-center">
 
-          <p className="text-[9px] uppercase tracking-[0.4em] text-white/35">
+          <p className="text-[9px] uppercase tracking-[0.4em] text-[#B08D50]">
             Your stay awaits
           </p>
 
-          <h2 className="mt-7 font-serif text-5xl leading-[0.95] md:text-7xl lg:text-8xl">
+          <h2 className="mt-7 font-serif text-5xl leading-[0.95] text-[#302C25] md:text-7xl lg:text-8xl">
 
             Find your
 
             <br />
 
-            <span className="italic text-white/40">
+            <span className="italic text-[#8B8171]">
               perfect room.
             </span>
 
@@ -510,16 +510,16 @@ function Rooms() {
 
           <Link
             to="/contact"
-            className="group mt-12 inline-flex items-center gap-5 bg-black px-8 py-5 text-[9px] font-medium uppercase tracking-[0.3em] !text-white transition duration-300 hover:bg-[#050505]"
+            className="group mt-12 inline-flex items-center gap-5 bg-[#302C25] px-8 py-5 text-[9px] font-medium uppercase tracking-[0.3em] !text-[#F7F4EC] transition duration-300 hover:bg-[#B08D50]"
           >
 
-            <span className="!text-white">
+            <span className="!text-[#F7F4EC]">
               Book Your Stay
             </span>
 
             <ArrowUpRight
               size={15}
-              className="text-white transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+              className="text-[#D7BC82] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
             />
 
           </Link>
